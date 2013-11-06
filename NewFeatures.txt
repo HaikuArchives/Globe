@@ -1,0 +1,46 @@
+Globe Webeditor
+
+v0.4.0
+ - Tag-Menu reakcióidejének változtathatósága
+ - Memóriaigény csökkentése
+ - A forrás közzététele GNU GPL Licensz alatt
+
+v0.3.0
+ - Mozgatható ToolBar-ok
+ - Gomboknak már van kerete
+ - Save, Save All, Save As..  gomb(menüpont) nem aktív, ha nincs módisítva a file(ok)
+ - Keresés
+ - A "Megtekintés" gomb nem menti ,,ész nélkül'', hanem megkérdezi, hogy mit tegyen,
+    ha módosított a file.
+ - Teljesen új tagmenü (< -ra előugró ablak), figyeli, hogy melyik paramáterek szerepelnek
+    már, és azokat nem rakja be a listába, színkeverő ablak,  1 fájlból olvassa az adatokat =>(gyorsab indulás)
+ - Drag & Drop
+ - Alapértelmezett könyvtár beállításának lehetősége
+ - Paramér menü ,,bal'' oldalt
+ - Átmérezhető a ,,bal'' oldali rész (méret megjegyzése)
+ - 0,3mp-es késleltetés az átméretezés, a paraméter menü frissítése, és a sorszámozás frissítése
+   elött (kisebb gépigény)
+- Paraméter menüben megjelent a Radio típus
+- Megjegyzi az ablak méretét és pozícióját
+
+ Legyen
+ - Billentyűzettel való vezérlés (pl.: ctrl + left = fájl váltása...)
+ - Ablak pozíciója, mérete Options (autosave ki/be + SaveCurrent gomb)
+ - A ColorWin ablakba egy Clear gomb kellene, amivel le lehet törölni a paramétert (ötlet)
+
+v0.2.0
+ - Megjelent a Tulajdonságok ablak
+ - Font beállítási lehetőség
+ - Kiemelés színek beállítási lehetősége
+ - HTML és PHP támogatása (PHP még fejlesztés alatt)
+ - Új kiemelő motor (Szerkesztés közben gyorsabb)
+ - Karakterkódolás változtatásának lehetősége
+ - Sortördelés lehetősége (WordWrap)
+ - Új sorszámozás
+ - ALT szöveg megjelenítése, a gombok és ,,taskbar''-nál
+ - Nyelvi fájlok megjelenése
+ - Fájl bezárásánál és kilépésnél a mentetlen fájlok mentését felajálja (ha több fájl van, akkor
+   egy listát ad, amiből ki lehet választani azokat, amelyeket menteni szeretnénk)
+ - Indításnál a paraméterként kapott fájlokat automatikusan megnyitja
+ - Dokumentáció
+ - Új weblap

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Globe Html szerkesztő</TITLE> 
+                <META http-equiv="Content-Type" content="text/html;charset=iso-8859-2"> 
+                <META http-equiv="Content-Language" content="hu"> 
+                <META name="author" content="Globe v0.1.6 &copy;"> 
+                <META name="description" content="Hungarian BeOS Users Group :: Globe Html Editor">
+</HEAD>
+ 
+<BODY BGCOLOR="#ffffff">
+ 
+<TABLE ALIGN="left" BORDER="0">
+	<TR>
+		<TD COLSPAN="3" ALIGN="left" VALIGN="top"><!-- Léc_felső --><BR><BR><IMG SRC="pic/globe_fej.gif" ALIGN=top ALT="[ Globe Html Editor ]"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH=10>&nbsp;</TD>
+		<TD><P ALIGN="left"><FONT COLOR="#800000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><br><b>Előzmények:</b></FONT></P>
+			<P ALIGN="left"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;A BeOS használata során felmerült többek 
+			részéről egy használható Html szerkesztő igénye. Természetesen léteztek már ilyen editorok, de a legtöbbjük alkalmatlan volt a magyar hosszúékezetes karakterek 
+			megfelelő mentésére.<BR><BR>
+			&nbsp;&nbsp;&nbsp;A BeBits -en tallózgatva leltem rá egy WebEditor 1.0 verziószámú Html szerkesztőre, melyhez a forrás is csatolva volt. Megnéztem a működését. A legnagyobb 
+			probléma az volt, hogy nem mentette el rendesen a magyar karaktereket. Aztán RoGer -nek említettem ezt a problémát és elküldtem részére a forrást. Ő elkészítette 
+			a magyar speciális hosszúékezetek mentésének leprogramozását. Addig én a forrásban átírtam a Html segédletet és kibővítettem egy-két hasznos dologgal és 
+			persze magyarítottam a menüpontokat. Ebből kifolyólag adtuk az 1.2 verziószámot ennek a kis programocskának. Persze használat során kiderült, hogy nem igazán 
+			erős oldala ennek a programnak a stabilitás. Így aztán részünkről az igények alapján, vetődött fel egy teljesen új BeOS alatt működő Html Editor megírása. Természetesen 
+			jómagam könnyebb helyzetben voltam, mivel én nem vagyok programozó. Ezért körbenéztem, mit kellene egy ilyen programnak a felhasználó részére nyújtania, majd 
+			RoGernek elmondtam az ötleteimet. Látott benne fantáziát és egy kicsit kihívásnak is vette egy ilyen program megírását.</FONT></P>
+			<P ALIGN="left"><FONT COLOR="#800000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><br><b>A program megszületése:</b></FONT></P>
+			<P ALIGN="left"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">Az ötletek tobzódása ellenére el kellett dönteni már a kezdetekben 
+			mit is szeretnénk kihozni a programból. RoGer is talált egy Windows alatt használt Html szerkesztőt a Cute -tól, nekem pedig a HomeSite volt a zsánerem. Aztán a 
+			tervezésnél ezek jó tulajdonságait vettük alapul. Nos a project elkezdődött. Eredetileg RHTML néven futott a megvalósítás. Első lépésben RoGer kialakította a felületet. 
+			Persze ez nem azonos a jelenleg már működő felülettel. Csak egy egyszerű ablak volt, nagyjából a jelenlegi felülettel,melynek a tetején három részben működő menüpont 
+			volt és lehetett benne egy szerkesztőablakban írni.<BR><BR>
+			&nbsp;&nbsp;&nbsp;A tesztelés során egy új hasznos funkció megalkotása is felvetődött. A probléma lényege az, hogy a BeOS -es programok zömében, egy új fájl 
+			megnyitása általában új ablakban történik. Viszont, ha több Html fájlt szerkesztése egyidőben, elég zavaró dolog különböző ablakok között ugrálnni oda-vissza. Nos az 
+			ötlet az volt, hogy meg kellene oldani több fájlnak a szerkesztő ablakán belül történő megnyitását és a megnyitott fájlok nevei egy-egy fülecskén legyenek láthatóak. 
+			A fülecskékre történő kattintással lehessen a fájlok között mozogni. Ez egy érdekes programozói feladat volt. Nemsokára jött is egy új változat a Globe -ból, melyben a 
+			szerkesztőablak alsó szegélyén ez a funkció már működött.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Felvetődött a gondolat, hogy mivel jelenleg ez a szerkesztőprogram nem támogatja a WYSIWYG üzemmódot, kellene bele egy hasznos segítség. 
+			Egy kis programozási utánajárást követően sikerült megvalósítani azt az elképzelést, hogy egy Html tag kezdőjelének leütését követően a szerkesztőfelületen egy 
+			segédablak bukkanjon elő a szerkesztési helyzetnek megfelelő lehetőségek felsorolásával. Gondolom nem kell sokat ecsetelnem, hogy ez mekkora segítség azoknak, 
+			akik nem igazán jártasak a Html kód szerkesztésben, persze segítség ez azoknak is, akik sok kódot már kívülről fújnak. Mivel ez a megalkotáskor csak egy próbálkozás 
+			volt, csak a működési elv kialakítása miatt üzemelt, pár elem megjelenítésével. Természetesen úgy lett kialakítva ez a segédablak, hogy a felsorolásban szereplő 
+			elemeket be is lehessen innét kiválasztást követően szúrni.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Ezt követően beindult a tesztelés és természetesen az adatokkal való feltöltés is. Itt nagy szerepe volt annak, hogy sokat kellett használni a 
+			programot és közben folyamatosan ellenőrizni a már elkészült Tag listát, illetve a beillesztésükkor előforduló hibákat. Hát ezt a nemes feladatcsokrot magamra vállaltam, 
+			mert úgy véltem, hogy RoGernek éppen elég a programozással vesződnie és elszenvednie a folyamatos építő jellegű kritikáimat. Ennek amúgy a haszna is megvolt. 
+			Nem értek a programozáshoz, viszont nagyon sok Html szerkesztővel volt szerencsém dolgozni. A fejlesztés alatt álló programunk tesztelése során egy csomó 
+			dolgot már eleve a használati kényelem és a célszerűség szemszögéból is próbáknak tettem ki. Persze bevallom őszintén, hogy néha gonoszul olyan szándékos 
+			cselekedeteket is megejtettem, amit talán csak a 0 bites userek követhetnek el, de ők is csak véletlenül.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Ezen partizán akciók során nagyon sok apró jelenség jött elő, melyek hozzájárultak további ötletekhez és megvalósításukhoz, ráadásul 
+			a program működését is stabilabbá tették.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Kezdetben voltak olyan apró kiküszöbölendő hibák, mint pl a felbukkanó segédablak nem tűnt el. Aztán ez orvosolva lett egy előre vagy 
+			vissza nyil lenyomásakori eltűntetéssel, vagy a beillesztést követő automatikus eltűnéssel.<BR><BR>
+			&nbsp;&nbsp;&nbsp;A kód jobb áttekinthetőségét szolgáló szöveg színezés is elkészült. Igaz jelenleg ez még csak a Html kódnál üzemel és kötött színeket 
+			használ. A fejlesztés során a szöveg színezés ki lesz terjesztve PHP -ra és más jellegű kódokra is. Természetesen be lesz építve a színezés felhasználó 
+			általi beállíthatósága is.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Az egyszerű TAG lista szerkesztés közbeni beadása segédablakban kibővült azzal, hogy nem csak a Html Tag -eket adta be a segédablak, 
+			hanem a konkrét Tag -hoz tartozó opciók is külön bejöttek a Tag beírását követő Space billentyű lenyomását követően. Ezzel lehetővé vált egy aktív segítséget 
+			biztosítani azoknak, akik Html szerkesztésre adják fejüket BeOS alatt.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Nagy sebességgel készült a teljes HTML Tag lista, kiegészítve az opciókkal, valamint a kötött értékekkel dolgozó opciók paramétereit 
+			tartalmazó listák. Természetesen ezek a listák nem biztos, hogy valamennyi Tag -et tartalmazzák, de arra törekedtünk, hogy az minél szélesebbkörű legyen. 
+			Arra is figyeltünk, hogy ne csak azok a Html utasítások, illetve opciók kerüljenek bele a listasorba, melyek a BeOS -ben értelmezhetőek a böngészők által, 
+			hanem azok is, melyek kimondottan IE vagy Netscape böngészők által értelmezhetőek.<BR><BR>
+			&nbsp;&nbsp;&nbsp;A lista elkészítése mellett az ikonok grafikai munkájára és természetesen a program ikonjának megtervezésére és elkészítésére is 
+			ügyeltünk. Az ikonkészítéskor merült fel bennünk az a gondolat, hogy a programnak szüksége van egy nemzetközileg is jól megjegyezhető és nagyjából 
+			mindenütt hasonlóan kiejtett, vagy értelmezhető névre. Hosszú vajúdás után a Globe névnél maradtunk. A nevet figyelembe véve készült el aztán a program 
+			ikonja. A grafikai munkálatoknál messzemenőkig arra törekedtünk, hogy csak a BeOS nyújtotta lehetőségeket vegyük igénybe és ennek ellenére sikerült 
+			megvalósítani a feladatokat.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Mivel a program készítése során nem kizárólag a magyar felhasználói tábort céloztuk meg, ezért próbáltunk olyan megoldásokat is 
+			beleépíteni a rendszerbe, melyek mindenki részére egyértelmű és netán más, ilyen célú szoftverek használata során már megszokottá vált. Ezen a téren 
+			nagy előrelépés volt a felső menüsor alatt található fő ikonsor kialakítása. Amikor egyértelművé vált, hogy ez az elképzelés jónak bizonyult, akkor egy új 
+			megoldás is beépítésre került a programba. Bizonyos alapvető Html utasítások, lehetőleg kategorizálva szintén ikonok által lettek jelölve és a felső menüsoron 
+			egy kategórizált füles rendszerben csoportosítottan elhelyeztük azokat. Így egyszerűen és közérthető ikonok segítségével megtalálhatóak és beszúrhatóak 
+			a kiválasztott utasítások a Html kódba. Azért ezt a megoldást választottuk, mert véleményünk szerint a felső menüsorból legördülő választási lehetőség 
+			nehezebben áttekinthető és nehezebben használható.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Magam részéről egyre inkább kezdtem beleszeretni ebbe a kis hasznos programocskába és ennek hatására egyre gyakrabban 
+			használtam. Sőt html szerkesztésre kizárólag ezt a programot használtam. Ez abból a szempontból is jó volt, hogy RoGert folyamatosan informálni 
+			tudtam az általam használat közben felmerült hibákról, netán használati kényelmet biztosító finomításokról. Így vettem észre egy elég idegesítő 
+			problémát is. Hosszabb Html fájlok megnyitása során párszor előfordult egy olyan parajelenség, hogy amennyiben a megnyitott fájlba beleszerkesztettem 
+			és azt elmentve bezártam, az újbóli megnyitáskor a fájl végén rendszertelen helyeken sortöredékek ismétlődtek, vagy vesztek el. Emellett előfordult, 
+			hogy szintén nagyméretű fájlokkal végzett munka során a program egyik pillanatról a másikra véglegesen ledermedt. Ugye ez sem egy kellemes dolog. 
+			Itt csak az volt a szerencse a szerencsétlenségben, hogy ilyen esetekben a BeOS -nak közönhetően nem az egész rendszert kellett újraindítani [ :-) ] . 
+			Ezen a két problémán sokat vívódtunk mind a ketten. Sokáig RoGernek és nekem sem volt semmilyen elképzelésem a probléma lehetséges okáról. 
+			Aztán módosításra került a fájl beolvasás, mégpedig úgy, hogy a fájl megnyitáskor a Windowsos sortöréseket a program automatikusan levágta 
+			beolvasáskor. A ritkán előforduló fagyás részben emiatt fordult elő, de ennek köze volt a szöveg színezési eljáráshoz is, mely szintén ki lett javítva a 
+			programban.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Tulajdonképpen így érkeztünk el a v.0.1.5 jelzésű változathozi. Tanakodtunk, hogy jó lenne hírt adni erről a Html szerkesztő 
+			programocskáról, de mindenképpen azt szerettük volna, ha egy már használható nyers verziót közre tudnánk bocsájtani. Ez a változat már stabilnak 
+			és használhatónak is bizonyult. A BeOS jelenlegi helyzetében viszont úgy éreztük, hogy ennek a változatnak a szabadon felhasználható közzétételével 
+			tudunk leginkább a BeOS bármilyen pozitív jövőjéhez egy nagyon kicsit is hozzájárulni. Persze a programnak éppen a nemzetközileg is ismertté tétele 
+			céljából több nyelvre is elkészítettük a honosítását. A v 0.1.5 -ös változat angol, német, francia, spanyol, portugál, norvég, holland és magyar 
+			nyelven készült el.<BR><BR>
+			&nbsp;&nbsp;&nbsp;A jelenlegi aktuális változat a 0.1.6 -os számot viseli. Ebben az éppen megnyitott és szerkesztett valamennyi fájl egyszerre 
+			elvégezhető mentése és az aktuálisan szerkesztett fájl NetPositive böngészőben a Globe egy ikonjára kattintás útján történő megnyitása került 
+			beépítésre. A nyelvi változatok kibővült a svéd nyelven használható Globe -val.</FONT></P>
+			<P ALIGN="left"><FONT COLOR="#800000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><BR><B>A jövő:</B></FONT></P>
+			<P ALIGN="left"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;&nbsp;Most, hogy a program elérte egy működőképes, 
+			publikálható változat formáját, a fejlesztés nem áll meg. Igaz a program már viszonylag jól használható és egypár kényelmi funkcióval is rendelkezik, 
+			de szeretnénk a szoftver szolgáltatásait és használati értékét tovább növelni. Mindezen elképzeléseknek az is egyben a célja, hogy mindazok, akik 
+			ezt az operációs rendszert megismerték, megszerették és nap mint nap szeretnék használni, továbbra is érezzék, a Be Inc felvásárlása nem egyenlő 
+			a BeOS halálával. Nagyon is tisztában vagyunk azzal, hogy a BeOS -t egy szűkebb réteg használja, de egy nagyon kreatív csapatot alkot a BeOS 
+			felhasználók tábora és ez egy biztató jel.<BR><BR>
+			&nbsp;&nbsp;&nbsp;Térjünk vissza a Globe -hoz. A fejlesztés további fázisaiban a következő elemekkel próbáljuk meg gazdagítani a szoftver funkcióit:<BR><BR>
+			<LI> egyéni beállítások ( szöveg színezés, szöveg kódolás, egyénileg beállítható font készlet )
+			<LI> a bal oldali szürke ablakban: mappa és mappa tartalom nézete, közvetlen fájlmegnyitási lehetőséggel
+			<LI> a BeOS -ban használható Opera és Mozilla böngészőkben a szerkesztett fájl megnyitása
+			<LI> beépitett FTP funkciók
+			<LI> különböző minta modulok elhelyezése
+			<LI> színpaletta és színkeverő rgb/hexadecimális érték konvertálóval
+			<LI> a képbeszúráshoz egy érték és opció beállítást lehetővé tevő panel
+			<LI> WYSIWYG szerkesztés
+			<BR><BR>
+			&nbsp;&nbsp;&nbsp;Amint látható, elképzelések, tervek vannak továbbra is. A megvalósításuk is továbbfolytatódik, persze mindehhez idő kell. Addig is mindenki 
+			használja kedvére a kibocsátott teszt verziót és amennyiben valamilyen rejtett hibát tapasztalnátok azt a programban megadott e-mail címek valamelyikére 
+			küldjétek el. Ezzel is hozzájárultok a program még tökéletesebb kialakításához.<BR><BR>
+			<B>Hungarian BeOS User Group<BR>
+			http://www.beos.hu<BR>
+			RoGer: roger@boly.hu és<BR>
+			kesigomu: kesigomu@freemail.hu<BR>
+			IRC: #beos.hu</B></FONT></P>
+		</TD>
+		<TD WIDTH=10>&nbsp;</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ALIGN="center">
+			<TABLE WIDTH="80%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+				<TR>
+					<TD ALIGN="center" COLSPAN="3" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><B>Globe v0.1.6:</B></FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Magyar:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=hu&url=http://www.beos.hu/download/Globe_v016_x86_hu.pkg">Globe_v016_x86_hu.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.4 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;English:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=en&url=http://www.beos.hu/download/Globe_v016_x86_en.pkg">Globe_v015_x86_en.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.53 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Deutsch:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=de&url=http://www.beos.hu/download/Globe_v016_x86_de.pkg">Globe_v016_x86_de.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.64 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;French:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=fr&url=http://www.beos.hu/download/Globe_v016_x86_fr.pkg">Globe_v016_x86_fr.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.6 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Norwegian:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=nor&url=http://www.beos.hu/download/Globe_v016_x86_nor.pkg">Globe_v016_x86_nor.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.58 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Dutch:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=nl&url=http://www.beos.hu/download/Globe_v016_x86_nl.pkg">Globe_v016_x86_nl.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.62 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Spanish:</FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=spain&url=http://www.beos.hu/download/Globe_v016_x86_spain.pkg">Globe_v016_x86_spain.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.6 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Portuguese: </FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=portuguese&url=http://www.beos.hu/download/Globe_v016_x86_portuguese.pkg">Globe_v016_x86_portuguese.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.62 KB</FONT></TD>
+				</TR>
+				<TR>
+					<TD ALIGN="left" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">&nbsp;&nbsp;Swedish: </FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2"><A HREF="http://www.zipernowsky.hu/globe/download.php?ver=0.1.6&lang=swed&url=http://www.beos.hu/download/Globe_v016_x86_swed.pkg">Globe_v016_x86_swed.pkg</A></FONT></TD>
+					<TD ALIGN="center" VALIGN="top"><FONT COLOR="#000000" FACE="arial, verdana, helvetica, sans-serif" SIZE="2">185.63 KB</FONT></TD>
+				</TR>
+			</TABLE>
+			</CENTER>
+			<BR><BR>
+		</TD>
+	</TR>
+</TABLE>
+
+</BODY>
+</HTML>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

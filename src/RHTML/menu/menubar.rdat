@@ -1,0 +1,63 @@
+<MENU NAME='standard' TEXT='MenuBar:Standard' ALT='MenuBar_Alt:Standard'>
+<MENU NAME='font' TEXT='MenuBar:Font' ALT='MenuBar_Alt:Font'>
+<MENU NAME='tables' TEXT='MenuBar:Tables' ALT='MenuBar_Alt:Tables'>
+<MENU NAME='frames' TEXT='MenuBar:Frames' ALT='MenuBar_Alt:Frames'>
+<MENU NAME='lists' TEXT='MenuBar:Lists' ALT='MenuBar_Alt:Lists'>
+<MENU NAME='forms' TEXT='MenuBar:Forms' ALT='MenuBar_Alt:Forms'>
+
+<BUTTON MENU='standard' IMG='left_button_n.tga' INSERTBACK='<P ALIGN="left">' INSERTFOR='</P>' ALT='MenuBar_Standard_Alt:Left'>
+<BUTTON MENU='standard' IMG='center_button_n.tga' INSERTBACK='<P ALIGN="center">' INSERTFOR='</P>' ALT='MenuBar_Standard_Alt:Center'>
+<BUTTON MENU='standard' IMG='right_button_n.tga' INSERTBACK='<P ALIGN="right">' INSERTFOR='</P>' ALT='MenuBar_Standard_Alt:Right'>
+<BUTTON MENU='standard' IMG='justify_button_n.tga' INSERTBACK='<P ALIGN="justify">' INSERTFOR='</P>' ALT='MenuBar_Standard_Alt:Justify'>
+<BUTTON MENU='standard' IMG='p_button_n.tga' INSERTBACK='<P>' INSERTFOR='</P>' ALT='MenuBar_Standard_Alt:P'>
+<BUTTON MENU='standard' IMG='br_button_n.tga' INSERT='<BR>' ALT='MenuBar_Standard_Alt:Break'>
+<BUTTON MENU='standard' IMG='nb_button_n.tga' INSERT='&nbsp;' ALT='MenuBar_Standard_Alt:NB'>
+<BUTTON MENU='standard' IMG='anchor_button_n.tga' INSERTBACK='<A>' INSERTFOR='</A>' ALT='MenuBar_Standard_Alt:Anchor'>
+<BUTTON MENU='standard' IMG='img_button_n.tga' INSERT='<IMG' INSERTFOR='>' ALT='MenuBar_Standard_Alt:Image'>
+<BUTTON MENU='standard' IMG='hr_button_n.tga' INSERT='<HR' INSERTFOR='>' ALT='MenuBar_Standard_Alt:Horizontal Rule'>
+<BUTTON MENU='standard' IMG='div_button_n.tga' INSERTBACK='<DIV>' INSERTFOR='</DIV>' ALT='MenuBar_Standard_Alt:DIV'>
+
+<BUTTON MENU='font' IMG='font_button_n.tga' INSERTBACK='<FONT>' INSERTFOR='</FONT>' ALT='MenuBar_Font_Alt:Font'>
+<BUTTON MENU='font' IMG='fplus_button_n.tga' INSERTBACK='<FONT SIZE="+1">' INSERTFOR='</FONT>' ALT='MenuBar_Font_Alt:Font +1'>
+<BUTTON MENU='font' IMG='fmin_button_n.tga' INSERTBACK='<FONT SIZE="-1">' INSERTFOR='</FONT>' ALT='MenuBar_Font_Alt:Font -1'>
+<BUTTON MENU='font' IMG='bold_button_n.tga' INSERTBACK='<B>' INSERTFOR='</B>' ALT='MenuBar_Font_Alt:Bold'>
+<BUTTON MENU='font' IMG='italic_button_n.tga' INSERTBACK='<I>' INSERTFOR='</I>' ALT='MenuBar_Font_Alt:Italic'>
+<BUTTON MENU='font' IMG='u_button_n.tga' INSERTBACK='<U>' INSERTFOR='</U>' ALT='MenuBar_Font_Alt:Underline'>
+<BUTTON MENU='font' IMG='s_button_n.tga' INSERTBACK='<STRONG>' INSERTFOR='</STRONG>' ALT='MenuBar_Font_Alt:Strong'>
+<BUTTON MENU='font' IMG='em_button_n.tga' INSERTBACK='<EM>' INSERTFOR='</EM>' ALT='MenuBar_Font_Alt:Emphasis'>
+<BUTTON MENU='font' IMG='pre_button_n.tga' INSERTBACK='<PRE>' INSERTFOR='</PRE>' ALT='MenuBar_Font_Alt:Preformatted'>
+<BUTTON MENU='font' IMG='h1_button_n.tga' INSERTBACK='<H1>' INSERTFOR='</H1>' ALT='MenuBar_Font_Alt:Head1'>
+<BUTTON MENU='font' IMG='h2_button_n.tga' INSERTBACK='<H2>' INSERTFOR='</H2>' ALT='MenuBar_Font_Alt:Head2'>
+<BUTTON MENU='font' IMG='h3_button_n.tga' INSERTBACK='<H3>' INSERTFOR='</H3>' ALT='MenuBar_Font_Alt:Head3'>
+<BUTTON MENU='font' IMG='sub_button_n.tga' INSERTBACK='<SUB>' INSERTFOR='</SUB>' ALT='MenuBar_Font_Alt:Sub Text'>
+<BUTTON MENU='font' IMG='sup_button_n.tga' INSERTBACK='<SUP>' INSERTFOR='</SUP>' ALT='MenuBar_Font_Alt:Upper Text'>
+
+<BUTTON MENU='tables' IMG='table_button_n.tga' INSERTBACK='<TABLE>' INSERTFOR='</TABLE>' ALT='MenuBar_Tables_Alt:Table'>
+<BUTTON MENU='tables' IMG='tr_button_n.tga' INSERTBACK='<TR>' INSERTFOR='</TR>' ALT='MenuBar_Tables_Alt:Table row'>
+<BUTTON MENU='tables' IMG='th_button_n.tga' INSERTBACK='<TH>' INSERTFOR='</TH>' ALT='MenuBar_Tables_Alt:Table header'>
+<BUTTON MENU='tables' IMG='td_button_n.tga' INSERTBACK='<TD>' INSERTFOR='</TD>' ALT='MenuBar_Tables_Alt:Table data'>
+<BUTTON MENU='tables' IMG='cp_button_n.tga' INSERTBACK='<CAPTION>' INSERTFOR='</CAPTION>' ALT='MenuBar_Tables_Alt:Table caption'>
+
+<BUTTON MENU='frames' IMG='sframe_button_n.tga' INSERTBACK='<FRAMESET>' INSERTFOR='</FRAMESET>' ALT='MenuBar_Frames_Alt:Frameset'>
+<BUTTON MENU='frames' IMG='frame_button_n.tga' INSERT='<FRAME NAME="" SRC="" FRAMEBORDER="no">' ALT='MenuBar_Frames_Alt:Frame'>
+<BUTTON MENU='frames' IMG='iframe_button_n.tga' INSERTBACK='<IFRAME SRC="" FRAMEBORDER="no">' INSERTFOR='</IFRAME>' ALT='MenuBar_Frames_Alt:Floating frame'>
+<BUTTON MENU='frames' IMG='noframe_button_n.tga' INSERTBACK='<NOFRAME>' INSERTFOR='</NOFRAME>' ALT='MenuBar_Frames_Alt:No frame'>
+<BUTTON MENU='frames' IMG='base_button_n.tga' INSERT='<BASE HREF="">' INSERTFOR='</A>' ALT='MenuBar_Frames_Alt:Base target'>
+
+<BUTTON MENU='lists' IMG='ul_button_n.tga' INSERTBACK='<UL>' INSERTFOR='</UL>' ALT='MenuBar_Lists_Alt:Unordered list'>
+<BUTTON MENU='lists' IMG='ol_button_n.tga' INSERTBACK='<OL>' INSERTFOR='</OL>' ALT='MenuBar_Lists_Alt:Ordered list'>
+<BUTTON MENU='lists' IMG='li_button_n.tga' INSERT='<LI>' ALT='MenuBar_Lists_Alt:List item'>
+<BUTTON MENU='lists' IMG='dl_button_n.tga' INSERT='<DL>' INSERTFOR='</DL>' ALT='MenuBar_Lists_Alt:Definition list'>
+<BUTTON MENU='lists' IMG='dt_button_n.tga' INSERT='<DT>' ALT='MenuBar_Lists_Alt:Definition term'>
+<BUTTON MENU='lists' IMG='dd_button_n.tga' INSERT='<DD>' ALT='MenuBar_Lists_Alt:Definition'>
+<BUTTON MENU='lists' IMG='menu_button_n.tga' INSERTBACK='<MENU>' INSERTFOR='</MENU>' ALT='MenuBar_Lists_Alt:Menu'>
+
+<BUTTON MENU='forms' IMG='form_button_n.tga' INSERTBACK='<FORM ACTION="" METHOD="post">' INSERTFOR='</FORM>' ALT='MenuBar_Forms_Alt:Form'>
+<BUTTON MENU='forms' IMG='submit_button_n.tga' INSERT='<INPUT TYPE="submit">' ALT='MenuBar_Forms_Alt:Submit button'>
+<BUTTON MENU='forms' IMG='reset_button_n.tga' INSERT='<INPUT TYPE="reset">' ALT='MenuBar_Forms_Alt:Reset button'>
+<BUTTON MENU='forms' IMG='text_button_n.tga' INSERT='<INPUT TYPE="text" NAME="">' ALT='MenuBar_Forms_Alt:Text'>
+<BUTTON MENU='forms' IMG='hidden_button_n.tga' INSERT='<INPUT TYPE="hidden" NAME="" VALUE="">' ALT='MenuBar_Forms_Alt:Hidden'>
+<BUTTON MENU='forms' IMG='txtarea_button_n.tga' INSERTBACK='<TEXTAREA NAME="">' INSERTFOR='</TEXTAREA>' ALT='MenuBar_Forms_Alt:Textarea'>
+<BUTTON MENU='forms' IMG='radio_button_n.tga' INSERT='<INPUT TYPE="radio" NAME="">' ALT='MenuBar_Forms_Alt:Radio button'>
+<BUTTON MENU='forms' IMG='checkbox_button_n.tga' INSERT='<INPUT TYPE="checkbox" NAME="">' ALT='MenuBar_Forms_Alt:Checkbox'>
+<BUTTON MENU='forms' IMG='select_button_n.tga' INSERTBACK='<SELECT NAME="">' INSERTFOR='</SELECT>' ALT='MenuBar_Forms_Alt:Select'>

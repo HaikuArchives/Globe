@@ -1,0 +1,2100 @@
+# - Gergely Rózsahegyi (RoGer) & Attila Ökrös (kesigomu) 2001-2003
+# - Last Update: 2003.05.21
+
+# - Param
+<TAG NAME='param' TEXT='PARAM' PUT='<PARAM>%c</PARAM>'>
+
+<PARAM TAG='param' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='param' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='param' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='text'>
+<PARAM TAG='param' NAME='VALUE' TEXT='VALUE' PUT=' VALUE="%c"' TYPE='text'>
+<PARAM TAG='param' NAME='VALUETYPE' TEXT='VALUETYPE' PUT=' VALUETYPE="%c"' TYPE='radio'>
+
+<VALUE TAG='param' PARAM='VALUETYPE' TEXT='data' PUT='data%c'>
+<VALUE TAG='param' PARAM='VALUETYPE' TEXT='object' PUT='object%c'>
+<VALUE TAG='param' PARAM='VALUETYPE' TEXT='ref' PUT='ref%c'>
+
+# - Td
+<TAG NAME='td' TEXT='TD' PUT='<TD%c></TD>'>
+
+<PARAM TAG='td' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='td' NAME='BACKGROUND' TEXT='BACKGROUND' PUT=' BACKGROUND="%c"' TYPE='text'>
+<PARAM TAG='td' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='td' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='text'>
+<PARAM TAG='td' NAME='BORDERCOLOR' TEXT='BORDERCOLOR' PUT=' BORDERCOLOR="%c"' TYPE='color'>
+<PARAM TAG='td' NAME='BORDERCOLORDARK' TEXT='BORDERCOLORDARK' PUT=' BORDERCOLORDARK="%c"' TYPE='color'>
+<PARAM TAG='td' NAME='BORDERCOLORLIGHT' TEXT='BORDERCOLORLIGHT' PUT=' BORDERCOLORLIGHT="%c"' TYPE='color'>
+<PARAM TAG='td' NAME='NOWRAP' TEXT='NOWRAP' PUT=' NOWRAP%c' TYPE='text'>
+<PARAM TAG='td' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='td' NAME='COLSPAN' TEXT='COLSPAN' PUT=' COLSPAN="%c"' TYPE='int'>
+<PARAM TAG='td' NAME='ROWSPAN' TEXT='ROWSPAN' PUT=' ROWSPAN="%c"' TYPE='int'>
+<PARAM TAG='td' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int%'>
+<PARAM TAG='td' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int%'>
+<PARAM TAG='td' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='td' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='td' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='td' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='text'>
+
+<VALUE TAG='td' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='td' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='td' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='td' PARAM='ALIGN' TEXT='char' PUT='char%c'>
+<VALUE TAG='td' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='td' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='td' PARAM='BORDERCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='black' PUT='black%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='green' PUT='green%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='red' PUT='red%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='white' PUT='white%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORDARK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='black' PUT='black%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='green' PUT='green%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='red' PUT='red%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='white' PUT='white%c'>
+<VALUE TAG='td' PARAM='BORDERCOLORLIGHT' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='td' PARAM='VALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='td' PARAM='VALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='td' PARAM='VALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='td' PARAM='VALIGN' TEXT='top' PUT='top%c'>
+
+# - TH
+<TAG NAME='th' TEXT='TH' PUT='<TH%c></TH>'>
+
+<PARAM TAG='th' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='th' NAME='BACKGROUND' TEXT='BACKGROUND' PUT=' BACKGROUND="%c"' TYPE='rext'>
+<PARAM TAG='th' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='th' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='text'>
+<PARAM TAG='th' NAME='BORDERCOLOR' TEXT='BORDERCOLOR' PUT=' BORDERCOLOR="%c"' TYPE='color'>
+<PARAM TAG='th' NAME='BORDERCOLORDARK' TEXT='BORDERCOLORDARK' PUT=' BORDERCOLORDARK="%c"' TYPE='color'>
+<PARAM TAG='th' NAME='BORDERCOLORLIGHT' TEXT='BORDERCOLORLIGHT' PUT=' BORDERCOLORLIGHT="%c"' TYPE='color'>
+<PARAM TAG='th' NAME='NOWRAP' TEXT='NOWRAP' PUT=' NOWRAP%c' TYPE='text'>
+<PARAM TAG='th' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='th' NAME='ROWSPAN' TEXT='ROWSPAN' PUT=' ROWSPAN="%c"' TYPE='text'>
+<PARAM TAG='th' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+<PARAM TAG='th' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int'>
+<PARAM TAG='th' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='th' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='th' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='th' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='text'>
+
+<VALUE TAG='th' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='th' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='th' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='th' PARAM='ALIGN' TEXT='char' PUT='char%c'>
+<VALUE TAG='th' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='th' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='th' PARAM='BORDERCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='black' PUT='black%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='green' PUT='green%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='red' PUT='red%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='white' PUT='white%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORDARK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='black' PUT='black%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='green' PUT='green%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='red' PUT='red%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='white' PUT='white%c'>
+<VALUE TAG='th' PARAM='BORDERCOLORLIGHT' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='th' PARAM='VALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='th' PARAM='VALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='th' PARAM='VALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='th' PARAM='VALIGN' TEXT='top' PUT='top%c'>
+
+# - Tr
+<TAG NAME='tr' TEXT='TR' PUT='<TR%c></TR>'>
+
+<PARAM TAG='tr' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='tr' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='tr' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='text'>
+<PARAM TAG='tr' NAME='BORDERCOLOR' TEXT='BORDERCOLOR' PUT=' BORDERCOLOR="%c"' TYPE='color'>
+<PARAM TAG='tr' NAME='BORDERCOLORDARK' TEXT='BORDERCOLORDARK' PUT=' BORDERCOLORDARK="%c"' TYPE='color'>
+<PARAM TAG='tr' NAME='BORDERCOLORLIGHT' TEXT='BORDERCOLORLIGHT' PUT=' BORDERCOLORLIGHT="%c"' TYPE='color'>
+<PARAM TAG='tr' NAME='NOWRAP' TEXT='NOWRAP' PUT=' NOWRAP%c' TYPE='text'>
+<PARAM TAG='tr' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='tr' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='tr' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='tr' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='tr' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='text'>
+
+<VALUE TAG='tr' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='tr' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='tr' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='tr' PARAM='ALIGN' TEXT='char' PUT='char%c'>
+<VALUE TAG='tr' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='tr' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='black' PUT='black%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='green' PUT='green%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='red' PUT='red%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='white' PUT='white%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORDARK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='black' PUT='black%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='green' PUT='green%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='red' PUT='red%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='white' PUT='white%c'>
+<VALUE TAG='tr' PARAM='BORDERCOLORLIGHT' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='tr' PARAM='VALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='tr' PARAM='VALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='tr' PARAM='VALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='tr' PARAM='VALIGN' TEXT='top' PUT='top%c'>
+
+# - A
+<TAG NAME='a' TEXT='A' PUT='<A%c></A>'>
+
+<PARAM TAG='a' NAME='ACCESSKEY' TEXT='ACCESSKEY' PUT=' ACCESSKEY="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='HREF' TEXT='HREF' PUT=' HREF="%c"' TYPE='radio'>
+<PARAM TAG='a' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='METHODS' TEXT='METHODS' PUT=' METHODS="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='a' NAME='TARGET' TEXT='TARGET' PUT=' TARGET="%c"' TYPE='radio'>
+<PARAM TAG='a' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='a' PARAM='HREF' TEXT='http://' PUT='http://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='ftp://' PUT='ftp://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='mailto:' PUT='mailto:%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='gopher://' PUT='gopher://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='news://' PUT='news://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='newsrc:' PUT='newsrc:%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='nntp://' PUT='nntp://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='telnet://' PUT='telnet://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='wais://' PUT='wais://%c'>
+<VALUE TAG='a' PARAM='HREF' TEXT='view-source://' PUT='view-source://%c'>
+
+<VALUE TAG='a' PARAM='TARGET' TEXT='_self' PUT='_self%c'>
+<VALUE TAG='a' PARAM='TARGET' TEXT='_parent' PUT='_parent%c'>
+<VALUE TAG='a' PARAM='TARGET' TEXT='_top' PUT='_top%c'>
+<VALUE TAG='a' PARAM='TARGET' TEXT='_blank' PUT='_blank%c'>
+<VALUE TAG='a' PARAM='TARGET' TEXT='my-target' PUT='my-target%c'>
+
+# - Address
+<TAG NAME='address' TEXT='ADDRESS' PUT='<ADDRESS>%c</ADDRESS>'>
+
+<PARAM TAG='address' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='address' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='address' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='address' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='address' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='address' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Blockquote
+<TAG NAME='blockquote' TEXT='BLOCKQUOTE' PUT='<BLOCKQUOTE%c></BLOCKQUOTE>'>
+
+<PARAM TAG='blockquote' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='blockquote' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='blockquote' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='blockquote' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='blockquote' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='blockquote' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Center
+<TAG NAME='center' TEXT='CENTER' PUT='<CENTER>%c</CENTER>'>
+
+<PARAM TAG='center' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='center' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='center' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='center' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='center' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='center' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Div
+<TAG NAME='div' TEXT='DIV' PUT='<DIV%c></DIV>'>
+
+<PARAM TAG='div' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='div' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='div' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='div' NAME='DATAFLD' TEXT='DATAFLD' PUT=' DATAFLD="%c"' TYPE='text'>
+<PARAM TAG='div' NAME='DATAFORMATAS' TEXT='DATAFORMATAS' PUT=' DATAFORMATAS="%c"' TYPE='radio'>
+<PARAM TAG='div' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='div' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='div' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='div' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='div' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='div' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='div' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='div' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='div' PARAM='DATAFORMATAS' TEXT='text' PUT='text%c'>
+<VALUE TAG='div' PARAM='DATAFORMATAS' TEXT='html' PUT='html%c'>
+
+# - Fieldset
+<TAG NAME='fieldset' TEXT='FIELDSET' PUT='<FIELDSET%c></FIELDSET>'>
+
+<PARAM TAG='fieldset' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='fieldset' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='fieldset' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='fieldset' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='fieldset' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='fieldset' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Legend
+<TAG NAME='legend' TEXT='LEGEND' PUT='<LEGEND%c></LEGEND>'>
+
+<PARAM TAG='legend' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='legend' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='legend' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='legend' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='legend' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='legend' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='legend' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='legend' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='legend' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='legend' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='legend' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='legend' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+# - Listening
+<TAG NAME='listening' TEXT='LISTING' PUT='<LISTING%c></LISTING>'>
+
+<PARAM TAG='listening' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='listening' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='listening' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='listening' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='listening' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='listening' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Marquee
+<TAG NAME='marquee' TEXT='MARQUEE' PUT='<MARQUEE%c></MARQUEE>'>
+
+<PARAM TAG='marquee' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='marquee' NAME='BEHAVIOR' TEXT='BEHAVIOR' PUT=' BEHAVIOR="%c"' TYPE='radio'>
+<PARAM TAG='marquee' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='marquee' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='DATAFLD' TEXT='DATAFLD' PUT=' DATAFLD="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='DATAFORMATAS' TEXT='DATAFORMATAS' PUT=' DATAFORMATAS="%c"' TYPE='radio'>
+<PARAM TAG='marquee' NAME='DATASRC' TEXT='DATASRC' PUT=' DATASRC="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='DIRECTION' TEXT='DIRECTION' PUT=' DIRECTION="%c"' TYPE='radio'>
+<PARAM TAG='marquee' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int'>
+<PARAM TAG='marquee' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='HSPACE' TEXT='HSPACE' PUT=' HSPACE="%c"' TYPE='int'>
+<PARAM TAG='marquee' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='LOOP' TEXT='LOOP' PUT=' LOOP="%c"' TYPE='radio'>
+<PARAM TAG='marquee' NAME='SCROLLAMOUNT' TEXT='SCROLLAMOUNT' PUT=' SCROLLAMOUNT="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='SCROLLDELAY' TEXT='SCROLLDELAY' PUT=' SCROLLDELAY="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='TRUESPEED' TEXT='TRUESPEED' PUT=' TRUESPEED="%c"' TYPE='text'>
+<PARAM TAG='marquee' NAME='VSPACE' TEXT='VSPACE' PUT=' VSPACE="%c"' TYPE='int'>
+<PARAM TAG='marquee' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+<VALUE TAG='marquee' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='marquee' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='marquee' PARAM='ALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='marquee' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='marquee' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+<VALUE TAG='marquee' PARAM='BEHAVIOR' TEXT='alternate' PUT='alternate%c'>
+<VALUE TAG='marquee' PARAM='BEHAVIOR' TEXT='scroll' PUT='scroll%c'>
+<VALUE TAG='marquee' PARAM='BEHAVIOR' TEXT='slide' PUT='slide%c'>
+
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='marquee' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='marquee' PARAM='DATAFORMATAS' TEXT='html' PUT='html%c'>
+<VALUE TAG='marquee' PARAM='DATAFORMATAS' TEXT='text' PUT='text%c'>
+
+<VALUE TAG='marquee' PARAM='DIRECTION' TEXT='left' PUT='left%c'>
+<VALUE TAG='marquee' PARAM='DIRECTION' TEXT='right' PUT='right%c'>
+
+# - Multicol
+<TAG NAME='multicol' TEXT='MULTICOL' PUT='<MULTICOL%c></MULTICOL>'>
+
+<PARAM TAG='multicol' NAME='COLS' TEXT='COLS' PUT=' COLS="%c"' TYPE='text'>
+<PARAM TAG='multicol' NAME='GUTTER' TEXT='GUTTER' PUT=' GUTTER="%c"' TYPE='text'>
+<PARAM TAG='multicol' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+# - P
+<TAG NAME='p' TEXT='P' PUT='<P%c></P>'>
+
+<PARAM TAG='p' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='text'>
+<PARAM TAG='p' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='p' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='p' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='p' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='p' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='p' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='p' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='p' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='p' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='p' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - Plaintext
+<TAG NAME='plaintext' TEXT='PLAINTEXT' PUT='<PLAINTEXT>%c</PLAINTEXT>'>
+
+<PARAM TAG='plaintext' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='plaintext' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='plaintext' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='plaintext' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='plaintext' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='plaintext' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Pre
+<TAG NAME='pre' TEXT='PRE' PUT='<PRE>%c</PRE>'>
+
+<PARAM TAG='pre' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='pre' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='pre' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='pre' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='pre' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='pre' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Xpm
+<TAG NAME='xpm' TEXT='XMP' PUT='<XMP>%c</XMP>'>
+
+<PARAM TAG='xpm' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='xpm' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='xpm' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='xpm' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='xpm' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='xpm' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Base
+<TAG NAME='base' TEXT='BASE' PUT='<BASE%c>'>
+
+<PARAM TAG='base' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='base' NAME='HREF' TEXT='HREF' PUT=' HREF="%c"' TYPE='text'>
+<PARAM TAG='base' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='base' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='base' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='base' NAME='TARGET' TEXT='TARGET' PUT=' TARGET="%c"' TYPE='text'>
+<PARAM TAG='base' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Basefont
+<TAG NAME='basefont' TEXT='BASEFONT' PUT='<BASEFONT%c></BASEFONT>'>
+
+<PARAM TAG='basefont' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='basefont' NAME='COLOR' TEXT='COLOR' PUT=' COLOR="%c"' TYPE='color'>
+<PARAM TAG='basefont' NAME='FACE' TEXT='FACE' PUT=' FACE="%c"' TYPE='text'>
+<PARAM TAG='basefont' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='basefont' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='basefont' NAME='SIZE' TEXT='SIZE' PUT=' SIZE="%c"' TYPE='text'>
+<PARAM TAG='basefont' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='basefont' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='basefont' PARAM='COLOR' TEXT='yellow' PUT='yellow%c'>
+
+# - Body
+<TAG NAME='body' TEXT='BODY' PUT='<BODY%c>\n</BODY>'>
+
+<PARAM TAG='body' NAME='ALINK' TEXT='ALINK' PUT=' ALINK="%c"' TYPE='color'>
+<PARAM TAG='body' NAME='BACKGROUND' TEXT='BACKGROUND' PUT=' BACKGROUND="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='body' NAME='BGPROPERTIES' TEXT='BGPROPERTIES' PUT=' BGPROPERTIES="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='BOTTOMMARGIN' TEXT='BOTTOMMARGIN' PUT=' BOTTOMMARGIN="%c"' TYPE='radio'>
+<PARAM TAG='body' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='LEFTMARGIN' TEXT='LEFTMARGIN' PUT=' LEFTMARGIN="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='LINK' TEXT='LINK' PUT=' LINK="%c"' TYPE='color'>
+<PARAM TAG='body' NAME='MARGINWIDTH' TEXT='MARGINWIDTH' PUT=' MARGINWIDTH="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='MARGINHEIGHT' TEXT='MARGINHEIGHT' PUT=' MARGINHEIGHT="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='RIGHTMARGIN' TEXT='RIGHTMARGIN' PUT=' RIGHTMARGIN="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='SCROLL' TEXT='SCROLL' PUT=' SCROLL="%c"' TYPE='radio'>
+<PARAM TAG='body' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='TEXT' TEXT='TEXT' PUT=' TEXT="%c"' TYPE='color'>
+<PARAM TAG='body' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='TOPMARGIN' TEXT='TOPMARGIN' PUT=' TOPMARGIN="%c"' TYPE='text'>
+<PARAM TAG='body' NAME='VLINK' TEXT='VLINK' PUT=' VLINK="%c"' TYPE='color'>
+
+<VALUE TAG='body' PARAM='ALINK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='black' PUT='black%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='green' PUT='green%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='red' PUT='red%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='white' PUT='white%c'>
+<VALUE TAG='body' PARAM='ALINK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='body' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='body' PARAM='LINK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='black' PUT='black%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='green' PUT='green%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='red' PUT='red%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='white' PUT='white%c'>
+<VALUE TAG='body' PARAM='LINK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='body' PARAM='TEXT' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='black' PUT='black%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='green' PUT='green%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='red' PUT='red%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='white' PUT='white%c'>
+<VALUE TAG='body' PARAM='TEXT' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='body' PARAM='VLINK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='black' PUT='black%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='green' PUT='green%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='red' PUT='red%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='white' PUT='white%c'>
+<VALUE TAG='body' PARAM='VLINK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='body' PARAM='SCROLL' TEXT='yes' PUT='yes%c'>
+<VALUE TAG='body' PARAM='SCROLL' TEXT='no' PUT='no%c'>
+
+<VALUE TAG='body' PARAM='BGPROPERTIES' TEXT='fixed' PUT='fixed%c'>
+
+
+# - Head
+<TAG NAME='head' TEXT='HEAD' PUT='<HEAD>\n%c\n</HEAD>'>
+
+<PARAM TAG='head' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='head' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Html
+<TAG NAME='html' TEXT='HTML' PUT='<HTML>\n%c\n</HTML>'>
+
+<PARAM TAG='html' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='html' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Isindex
+<TAG NAME='isindex' TEXT='ISINDEX' PUT='<ISINDEX>%c</ISINDEX>'>
+
+<PARAM TAG='isindex' NAME='ACTION' TEXT='ACTION' PUT=' ACTION="%c"' TYPE='text'>
+<PARAM TAG='isindex' NAME='PROMPT' TEXT='PROMPT' PUT=' PROMPT="%c"' TYPE='text'>
+
+# - Link
+<TAG NAME='link' TEXT='LINK' PUT='<LINK%c></LINK>'>
+
+<PARAM TAG='link' NAME='HREF' TEXT='HREF' PUT=' HREF="%c"' TYPE='text'>
+<PARAM TAG='link' NAME='DISABLED' TEXT='DISABLED' PUT=' DISABLED%c' TYPE='text'>
+<PARAM TAG='link' NAME='REL' TEXT='REL' PUT=' REL="%c"' TYPE='radio'>
+<PARAM TAG='link' NAME='REV' TEXT='REV' PUT=' REV="%c"' TYPE='text'>
+<PARAM TAG='link' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='link' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='link' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='text'>
+
+<VALUE TAG='link' PARAM='REL' TEXT='child' PUT='child%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='contents' PUT='contents%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='copyright' PUT='copyright%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='end' PUT='end%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='first' PUT='first%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='glossary' PUT='glossary%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='help' PUT='help%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='home' PUT='home%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='index' PUT='index%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='last' PUT='last%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='next' PUT='next%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='parent' PUT='parent%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='previous' PUT='previous%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='stylesheet' PUT='stylesheet%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='toc' PUT='toc%c'>
+<VALUE TAG='link' PARAM='REL' TEXT='up' PUT='up%c'>
+
+# - Nextid
+<TAG NAME='nextid' TEXT='NEXTID' PUT='<NEXTID>%c</NEXTID>'>
+
+# - Style
+<TAG NAME='style' TEXT='STYLE' PUT='<STYLE%c></STYLE>'>
+
+<PARAM TAG='style' NAME='DISABLED' TEXT='DISABLED' PUT=' DISABLED%c' TYPE='text'>
+<PARAM TAG='style' NAME='MEDIA' TEXT='MEDIA' PUT=' MEDIA="%c"' TYPE='text'>
+<PARAM TAG='style' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='text'>
+<PARAM TAG='style' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='style' PARAM='MEDIA' TEXT='all' PUT='all%c'>
+<VALUE TAG='style' PARAM='MEDIA' TEXT='braille' PUT='braille%c'>
+<VALUE TAG='style' PARAM='MEDIA' TEXT='print' PUT='print%c'>
+<VALUE TAG='style' PARAM='MEDIA' TEXT='projection' PUT='projection%c'>
+<VALUE TAG='style' PARAM='MEDIA' TEXT='screen' PUT='screen%c'>
+<VALUE TAG='style' PARAM='MEDIA' TEXT='speech' PUT='speech%c'>
+
+<VALUE TAG='style' PARAM='TYPE' TEXT='text/css' PUT='text/css%c'>
+
+# - Title
+<TAG NAME='title' TEXT='TITLE' PUT='<TITLE>%c</TITLE>'>
+
+# - Form
+<TAG NAME='form' TEXT='FORM' PUT='<FORM%c></FORM>'>
+
+<PARAM TAG='form' NAME='ACTION' TEXT='ACTION' PUT=' ACTION="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='ENCTYPE' TEXT='ENCTYPE' PUT=' ENCTYPE="%c"' TYPE='radio'>
+<PARAM TAG='form' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='METHOD' TEXT='METHOD' PUT=' METHOD="%c"' TYPE='radio'>
+<PARAM TAG='form' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='form' NAME='TARGET' TEXT='TARGET' PUT=' TARGET="%c"' TYPE='radio'>
+<PARAM TAG='form' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='form' PARAM='ENCTYPE' TEXT='applications/x-www-form-urlencoded' PUT='applications/x-www-form-urlencoded%c'>
+<VALUE TAG='form' PARAM='ENCTYPE' TEXT='multipart/form-data' PUT='multipart/form-data%c'>
+
+<VALUE TAG='form' PARAM='METHOD' TEXT='get' PUT='get%c'>
+<VALUE TAG='form' PARAM='METHOD' TEXT='post' PUT='post%c'>
+
+<VALUE TAG='form' PARAM='METHOD' TEXT='_blank' PUT='_blank%c'>
+<VALUE TAG='form' PARAM='METHOD' TEXT='_parent' PUT='_parent%c'>
+<VALUE TAG='form' PARAM='METHOD' TEXT='_self' PUT='_self%c'>
+<VALUE TAG='form' PARAM='METHOD' TEXT='_top' PUT='_top%c'>
+
+# - Keygen
+<TAG NAME='keygen' TEXT='KEYGEN' PUT='<KEYGEN>%c'>
+
+<PARAM TAG='keygen' NAME='CHALLENGE' TEXT='CHALLENGE' PUT=' CHALLENGE="%c"' TYPE='text'>
+<PARAM TAG='keygen' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+
+# - H6
+<TAG NAME='h6' TEXT='H6' PUT='<H6>%c</H6>'>
+
+<PARAM TAG='h6' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='h6' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='h6' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='h6' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='h6' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='h6' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='h6' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='h6' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='h6' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='h6' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - H5
+<TAG NAME='h5' TEXT='H5' PUT='<H5>%c</H5>'>
+
+<PARAM TAG='h5' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='h5' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='h5' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='h5' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='h5' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='h5' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='h5' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='h5' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='h5' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='h5' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - H4
+<TAG NAME='h4' TEXT='H4' PUT='<H4>%c</H4>'>
+
+<PARAM TAG='h4' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='h4' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='h4' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='h4' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='h4' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='h4' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='h4' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='h4' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='h4' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='h4' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - H3
+<TAG NAME='h3' TEXT='H3' PUT='<H3>%c</H3>'>
+
+<PARAM TAG='h3' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='h3' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='h3' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='h3' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='h3' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='h3' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='h3' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='h3' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='h3' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='h3' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - H2
+<TAG NAME='h2' TEXT='H2' PUT='<H2>%c</H2>'>
+
+<PARAM TAG='h2' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='h2' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='h2' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='h2' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='h2' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='h2' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='h2' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='h2' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='h2' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='h2' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - H1
+<TAG NAME='h1' TEXT='H1' PUT='<H1>%c</H1>'>
+
+<PARAM TAG='h1' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='h1' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='h1' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='h1' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='h1' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='h1' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='h1' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='h1' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='h1' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='h1' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - Label
+<TAG NAME='label' TEXT='LABEL' PUT='<LABEL>%c</LABEL>'>
+
+<PARAM TAG='label' NAME='ACCESSKEY' TEXT='ACCESSKEY' PUT=' ACCESSKEY="%c"' TYPE='text'>
+<PARAM TAG='label' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='label' NAME='FOR' TEXT='FOR' PUT=' FOR="%c"' TYPE='text'>
+<PARAM TAG='label' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='label' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='label' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Option
+<TAG NAME='option' TEXT='OPTION' PUT='<OPTION>%c</OPTION>'>
+
+<PARAM TAG='option' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='option' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='option' NAME='SELECTED' TEXT='SELECTED' PUT=' SELECTED%c' TYPE='text'>
+<PARAM TAG='option' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='option' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='option' NAME='VALUE' TEXT='VALUE' PUT=' VALUE="%c"' TYPE='text'>
+
+# - Select
+<TAG NAME='select' TEXT='SELECT' PUT='<SELECT%c></SELECT>'>
+
+<PARAM TAG='select' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='select' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='select' NAME='MULTIPLE' TEXT='MULTIPLE' PUT=' MULTIPLE%c' TYPE='text'>
+<PARAM TAG='select' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='select' NAME='SIZE' TEXT='SIZE' PUT=' SIZE="%c"' TYPE='int'>
+<PARAM TAG='select' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='select' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Textarea
+<TAG NAME='textarea' TEXT='TEXTAREA' PUT='<TEXTAREA%c></TEXTAREA>'>
+
+<PARAM TAG='textarea' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='CLACOLSSS' TEXT='COLS' PUT=' COLS="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='ROWS' TEXT='ROWS' PUT=' ROWS="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='textarea' NAME='WRAP' TEXT='WRAP' PUT=' WRAP="%c"' TYPE='text'>
+
+<VALUE TAG='textarea' PARAM='WRAP' TEXT='off' PUT='off%c'>
+<VALUE TAG='textarea' PARAM='WRAP' TEXT='physical' PUT='physical%c'>
+<VALUE TAG='textarea' PARAM='WRAP' TEXT='virtual' PUT='virtual%c'>
+
+# - Frame
+<TAG NAME='frame' TEXT='FRAME' PUT='<FRAME%c>'>
+
+<PARAM TAG='frame' NAME='BORDERCOLOR' TEXT='BORDERCOLOR' PUT=' BORDERCOLOR="%c"' TYPE='color'>
+<PARAM TAG='frame' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='FRAMEBORDER' TEXT='FRAMEBORDER' PUT=' FRAMEBORDER="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='FRAMESPACING' TEXT='FRAMESPACING' PUT=' FRAMESPACING="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='MARGINHEIGHT' TEXT='MARGINHEIGHT' PUT=' MARGINHEIGHT="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='MARGINWIDTH' TEXT='MARGINWIDTH' PUT=' MARGINWIDTH="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='NORESIZE' TEXT='NORESIZE' PUT=' NORESIZE%c' TYPE='text'>
+<PARAM TAG='frame' NAME='SCROLLING' TEXT='SCROLLING' PUT=' SCROLLING="%c"' TYPE='radio'>
+<PARAM TAG='frame' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='frame' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='frame' PARAM='BORDERCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='frame' PARAM='FRAMEBORDER' TEXT='0' PUT='0%c'>
+<VALUE TAG='frame' PARAM='FRAMEBORDER' TEXT='no' PUT='no%c'>
+<VALUE TAG='frame' PARAM='FRAMEBORDER' TEXT='yes' PUT='yes%c'>
+
+<VALUE TAG='frame' PARAM='SCROLLING' TEXT='auto' PUT='auto%c'>
+<VALUE TAG='frame' PARAM='SCROLLING' TEXT='no' PUT='no%c'>
+<VALUE TAG='frame' PARAM='SCROLLING' TEXT='yes' PUT='yes%c'>
+
+# - Frameset
+<TAG NAME='frameset' TEXT='FRAMESET' PUT='<FRAMESET%c>\n</FRAMESET>'>
+
+<PARAM TAG='frameset' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='BORDERCOLOR' TEXT='BORDERCOLOR' PUT=' BORDERCOLOR="%c"' TYPE='color'>
+<PARAM TAG='frameset' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='COLS' TEXT='COLS' PUT=' COLS="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='FRAMEBORDER' TEXT='FRAMEBORDER' PUT=' FRAMEBORDER="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='FRAMESPACING' TEXT='FRAMESPACING' PUT=' FRAMESPACING="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='ROWS' TEXT='ROWS' PUT=' ROWS="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='frameset' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='frameset' PARAM='BORDERCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='frameset' PARAM='FRAMEBORDER' TEXT='0' PUT='0%c'>
+<VALUE TAG='frameset' PARAM='FRAMEBORDER' TEXT='no' PUT='no%c'>
+<VALUE TAG='frameset' PARAM='FRAMEBORDER' TEXT='yes' PUT='yes%c'>
+
+# - Iframe
+<TAG NAME='iframe' TEXT='IFRAME' PUT='<IFRAME>%c</IFRAME>'>
+
+<PARAM TAG='iframe' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='iframe' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='FRAMEBORDER' TEXT='FRAMEBORDER' PUT=' FRAMEBORDER="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='MARGINHEIGHT' TEXT='MARGINHEIGHT' PUT=' MARGINHEIGHT="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='MARGINWIDTH' TEXT='MARGINWIDTH' PUT=' MARGINWIDTH="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='SCROLLING' TEXT='SCROLLING' PUT=' SCROLLING="%c"' TYPE='radio'>
+<PARAM TAG='iframe' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='iframe' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='text'>
+
+<VALUE TAG='iframe' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='iframe' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='iframe' PARAM='ALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='iframe' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='iframe' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+<VALUE TAG='iframe' PARAM='SCROLLING' TEXT='auto' PUT='auto%c'>
+<VALUE TAG='iframe' PARAM='SCROLLING' TEXT='no' PUT='no%c'>
+<VALUE TAG='iframe' PARAM='SCROLLING' TEXT='yes' PUT='yes%c'>
+
+# - Noframes
+<TAG NAME='noframes' TEXT='NOFRAMES' PUT='<NOFRAMES>%c</NOFRAMES>'>
+
+# - Dl
+<TAG NAME='dl' TEXT='DL' PUT='<DL>%c</DL>'>
+
+<PARAM TAG='dl' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='dl' NAME='COMPACT' TEXT='COMPACT' PUT=' COMPACT="%c"' TYPE='text'>
+<PARAM TAG='dl' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='dl' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='dl' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='dl' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='dl' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Ol
+<TAG NAME='ol' TEXT='OL' PUT='<OL%c></OL>'>
+
+<PARAM TAG='ol' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='COMPACT' TEXT='COMPACT' PUT=' COMPACT="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='ol' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='text'>
+
+<VALUE TAG='ol' PARAM='TYPE' TEXT='A' PUT='A%c'>
+<VALUE TAG='ol' PARAM='TYPE' TEXT='a' PUT='a%c'>
+<VALUE TAG='ol' PARAM='TYPE' TEXT='I' PUT='I%c'>
+<VALUE TAG='ol' PARAM='TYPE' TEXT='i' PUT='i%c'>
+<VALUE TAG='ol' PARAM='TYPE' TEXT='1' PUT='1%c'>
+
+# - Ul
+<TAG NAME='ul' TEXT='UL' PUT='<UL%c></UL>'>
+
+<PARAM TAG='ul' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='COMPACT' TEXT='COMPACT' PUT=' COMPACT="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='ul' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='text'>
+
+<VALUE TAG='ul' PARAM='TYPE' TEXT='disc' PUT='disc%c'>
+<VALUE TAG='ul' PARAM='TYPE' TEXT='circle' PUT='circle%c'>
+<VALUE TAG='ul' PARAM='TYPE' TEXT='square' PUT='square%c'>
+
+# - Menu
+<TAG NAME='menu' TEXT='MENU' PUT='<MENU>%c</MENU>'>
+
+<PARAM TAG='menu' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='menu' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='menu' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='menu' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='menu' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='menu' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Dt
+<TAG NAME='dt' TEXT='DT' PUT='<DT>%c'>
+
+# - Dd
+<TAG NAME='dd' TEXT='DD' PUT='<DD>%c'>
+
+# - Applet
+<TAG NAME='applet' TEXT='APPLET' PUT='<APPLET%c></APPLET>'>
+
+<PARAM TAG='applet' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='applet' NAME='ALT' TEXT='ALT' PUT=' ALT="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='ARCHIVE' TEXT='ARCHIVE' PUT=' ARCHIVE="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='CODE' TEXT='CODE' PUT=' CODE="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='CODEBASE' TEXT='CODEBASE' PUT=' CODEBASE="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='MAYSCRIPT' TEXT='MAYSCRIPT' PUT=' MAYSCRIPT="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='applet' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='absbottom' PUT='absbottom%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='absmiddle' PUT='absmiddle%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='texttop' PUT='texttop%c'>
+<VALUE TAG='applet' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+# - Bgsound
+<TAG NAME='bgsound' TEXT='BGSOUND' PUT='<BGSOUND%c>'>
+
+<PARAM TAG='bgsound' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='LOOP' TEXT='LOOP' PUT=' LOOP="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='bgsound' NAME='VOLUME' TEXT='VOLUME' PUT=' VOLUME="%c"' TYPE='text'>
+
+<VALUE TAG='bgsound' PARAM='LOOP' TEXT='infinite' PUT='infinite%c'>
+
+# - Embed
+<TAG NAME='embed' TEXT='EMBED' PUT='<EMBED%c></EMBED>'>
+
+<PARAM TAG='embed' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int'>
+<PARAM TAG='embed' NAME='HIDDEN' TEXT='HIDDEN' PUT=' HIDDEN="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+<PARAM TAG='embed' NAME='PALETTE' TEXT='PALETTE' PUT=' PALETTE="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='PLUGINSPACE' TEXT='PLUGINSPACE' PUT=' PLUGINSPACE="%c"' TYPE='text'>
+<PARAM TAG='embed' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='text'>
+
+# - Noembed
+<TAG NAME='noembed' TEXT='NOEMBED' PUT='<NOEMBED>%c</NOEMBED>'>
+
+# - Em
+<TAG NAME='object' TEXT='OBJECT' PUT='<OBJECT%c></OBJECT>'>
+
+<PARAM TAG='object' NAME='ACCESSKEY' TEXT='ACCESSKEY' PUT=' ACCESSKEY="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='object' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='int'>
+<PARAM TAG='object' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='CLASSID' TEXT='CLASSID' PUT=' CLASSID="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='CODEBASE' TEXT='CODEBASE' PUT=' CODEBASE="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='DATAFLD' TEXT='DATAFLD' PUT=' DATAFLD="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='DATASRC' TEXT='DATASRC' PUT=' DATASRC="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='HSPACE' TEXT='HSPACE' PUT=' HSPACE="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='STANDBY' TEXT='STANDBY' PUT=' STANDBY="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='object' NAME='VSPACE' TEXT='VSPACE' PUT=' VSPACE="%c"' TYPE='int'>
+<PARAM TAG='object' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+<VALUE TAG='object' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='object' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='object' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='object' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - Sound
+<TAG NAME='sound' TEXT='SOUND' PUT='<SOUND%c>'>
+
+<PARAM TAG='sound' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='sound' NAME='DELAY' TEXT='DELAY' PUT=' DELAY="%c"' TYPE='text'>
+<PARAM TAG='sound' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='sound' NAME='LOOP' TEXT='LOOP' PUT=' LOOP="%c"' TYPE='radio'>
+<PARAM TAG='sound' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='sound' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='sound' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='sound' PARAM='LOOP' TEXT='infinite' PUT='infinite%c'>
+
+# - Map
+<TAG NAME='map' TEXT='MAP' PUT='<MAP%c></MAP>'>
+
+<PARAM TAG='map' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='map' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='map' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='map' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='map' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Caption
+<TAG NAME='caption' TEXT='CAPTION' PUT='<CAPTION%c></CAPTION>'>
+
+<PARAM TAG='caption' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='caption' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='caption' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='caption' NAME='SPAN' TEXT='SPAN' PUT=' SPAN="%c"' TYPE='text'>
+<PARAM TAG='caption' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='caption' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='caption' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='caption' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='caption' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='caption' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - Col
+<TAG NAME='col' TEXT='COL' PUT='<COL>%c'>
+
+<PARAM TAG='col' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='col' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='col' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='col' NAME='SPAN' TEXT='SPAN' PUT=' SPAN="%c"' TYPE='text'>
+<PARAM TAG='col' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='col' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+<VALUE TAG='col' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='col' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='col' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='col' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - Colorgroup
+<TAG NAME='colorgroup' TEXT='COLGROUP' PUT='<COLGROUP%c>'>
+
+<PARAM TAG='colorgroup' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='colorgroup' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='colorgroup' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='colorgroup' NAME='SPAN' TEXT='SPAN' PUT=' SPAN="%c"' TYPE='text'>
+<PARAM TAG='colorgroup' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='colorgroup' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='colorgroup' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='radio'>
+
+<VALUE TAG='colorgroup' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='colorgroup' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='colorgroup' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='colorgroup' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='colorgroup' PARAM='VALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='colorgroup' PARAM='VALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='colorgroup' PARAM='VALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='colorgroup' PARAM='VALIGN' TEXT='top' PUT='top%c'>
+
+# - Tbody
+<TAG NAME='tbody' TEXT='TBODY' PUT='<TBODY%c></TBODY>'>
+
+<PARAM TAG='tbody' NAME='ALIGN' TEXT='CLAALIGNSS' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='tbody' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='tbody' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='tbody' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='tbody' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='tbody' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='tbody' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='tbody' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='tbody' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='text'>
+
+<VALUE TAG='tbody' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='tbody' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='tbody' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='tbody' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+# - Tfoot
+<TAG NAME='tfoot' TEXT='TFOOT' PUT='<TFOOT%c></TFOOT>'>
+
+<PARAM TAG='tfoot' NAME='ALIGN' TEXT='CLAALIGNSS' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='tfoot' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='tfoot' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='tfoot' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='tfoot' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='tfoot' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='tfoot' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='tfoot' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='tfoot' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='text'>
+
+<VALUE TAG='tfoot' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='tfoot' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='tfoot' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='tfoot' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+# - Thead
+<TAG NAME='thead' TEXT='THEAD' PUT='<THEAD%c></THEAD>'>
+
+<PARAM TAG='thead' NAME='ALIGN' TEXT='CLAALIGNSS' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='thead' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='thead' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='thead' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='thead' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='thead' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='thead' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='thead' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='thead' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='text'>
+
+<VALUE TAG='thead' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='thead' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='thead' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='thead' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+# - <!--..-->
+<TAG NAME='<!--..-->' TEXT='<!--..-->' PUT='<!--%c-->'>
+
+# - Acronym
+<TAG NAME='acronym' TEXT='ACRONYM' PUT='<ACRONYM>%c</ACRONYM>'>
+
+<PARAM TAG='acronym' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='acronym' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='acronym' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='acronym' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='acronym' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='acronym' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - B
+<TAG NAME='b' TEXT='B' PUT='<B>%c</B>'>
+
+<PARAM TAG='b' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='b' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='b' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='b' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='b' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='b' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Big
+<TAG NAME='big' TEXT='BIG' PUT='<BIG>%c</BIG>'>
+
+<PARAM TAG='big' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='big' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='big' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='big' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='big' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='big' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Blink
+<TAG NAME='blink' TEXT='BLINK' PUT='<BLINK>%c</BLINK>'>
+
+# - Button
+<TAG NAME='button' TEXT='BUTTON' PUT='<BUTTON%c></BUTTON>'>
+
+<PARAM TAG='button' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='ACCESSKEY' TEXT='ACCESSKEY' PUT=' ACCESSKEY="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='DATAFLD' TEXT='DATAFLD' PUT=' DATAFLD="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='DATAFORMATAS' TEXT='DATAFORMATAS' PUT=' DATAFORMATAS="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='DATASRC' TEXT='DATASRC' PUT=' DATASRC="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='DISABLED' TEXT='DISABLED' PUT=' DISABLED="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='button' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Cite
+<TAG NAME='cite' TEXT='CITE' PUT='<CITE>%c</CITE>'>
+
+<PARAM TAG='cite' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='cite' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='cite' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='cite' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='cite' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='cite' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Em
+<TAG NAME='em' TEXT='EM' PUT='<EM>%c</EM>'>
+
+<PARAM TAG='em' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='em' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='em' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='em' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='em' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='em' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Code
+<TAG NAME='code' TEXT='CODE' PUT='<CODE>%c</CODE>'>
+
+<PARAM TAG='code' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='code' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='code' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='code' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='code' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='code' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Comment
+<TAG NAME='comment' TEXT='COMMENT' PUT='<COMMENT>%c</COMMENT>'>
+
+<PARAM TAG='comment' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='comment' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='comment' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Del
+<TAG NAME='del' TEXT='DEL' PUT='<DEL>%c</DEL>'>
+
+<PARAM TAG='del' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='CITE' TEXT='CITE' PUT=' CITE="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='DATETIME' TEXT='DATETIME' PUT=' DATETIME="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='del' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Dfn
+<TAG NAME='dfn' TEXT='DFN' PUT='<DFN>%c</DFN>'>
+
+<PARAM TAG='dfn' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='dfn' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='dfn' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='dfn' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='dfn' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='dfn' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Font
+<TAG NAME='font' TEXT='FONT' PUT='<FONT%c></FONT>'>
+
+<PARAM TAG='font' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='COLOR' TEXT='COLOR' PUT=' COLOR="%c"' TYPE='color'>
+<PARAM TAG='font' NAME='FACE' TEXT='FACE' PUT=' FACE="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='POINT-SIZE' TEXT='POINT-SIZE' PUT=' POINT-SIZE="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='SIZE' TEXT='SIZE' PUT=' SIZE="%c"' TYPE='radio'>
+<PARAM TAG='font' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='font' NAME='WEIGHT' TEXT='WEIGHT' PUT=' WEIGHT="%c"' TYPE='text'>
+
+<VALUE TAG='font' PARAM='COLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='font' PARAM='COLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='font' PARAM='FACE' TEXT='arial' PUT='arial%c'>
+
+<VALUE TAG='font' PARAM='SIZE' TEXT='-4' PUT='-4%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='-3' PUT='-3%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='-2' PUT='-2%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='-1' PUT='-1%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='1' PUT='1%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='2' PUT='2%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='3' PUT='3%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='4' PUT='4%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='5' PUT='5%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='6' PUT='6%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='+1' PUT='+1%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='+2' PUT='+2%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='+3' PUT='+3%c'>
+<VALUE TAG='font' PARAM='SIZE' TEXT='+4' PUT='+4%c'>
+
+# - I
+<TAG NAME='i' TEXT='I' PUT='<I>%c</I>'>
+
+<PARAM TAG='i' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='i' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='i' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='i' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='i' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='i' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Ilayer
+<TAG NAME='ilayer' TEXT='ILAYER' PUT='<ILAYER%c></ILAYER>'>
+
+<PARAM TAG='ilayer' NAME='ABOVE' TEXT='ABOVE' PUT=' ABOVE="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='BELOW' TEXT='BELOW' PUT=' BELOW="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='ilayer' NAME='BACKGROUND' TEXT='BACKGROUND' PUT=' BACKGROUND="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='CLIP' TEXT='CLIP' PUT=' CLIP="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='LEFT' TEXT='LEFT' PUT=' LEFT="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='TOP' TEXT='TOP' PUT=' TOP="%c"' TYPE='text'>
+<PARAM TAG='ilayer' NAME='VISIBILITY' TEXT='VISIBILITY' PUT=' VISIBILITY="%c"' TYPE='radio'>
+<PARAM TAG='ilayer' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+<PARAM TAG='ilayer' NAME='Z-INDEX' TEXT='Z-INDEX' PUT=' Z-INDEX="%c"' TYPE='text'>
+
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='ilayer' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='ilayer' PARAM='VISIBILITY' TEXT='hide' PUT='hide%c'>
+<VALUE TAG='ilayer' PARAM='VISIBILITY' TEXT='inherit' PUT='inherit%c'>
+
+# - Layer
+<TAG NAME='layer' TEXT='LAYER' PUT='<LAYER%c></LAYER>'>
+
+<PARAM TAG='layer' NAME='ABOVE' TEXT='ABOVE' PUT=' ABOVE="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='BELOW' TEXT='BELOW' PUT=' BELOW="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='layer' NAME='BACKGROUND' TEXT='BACKGROUND' PUT=' BACKGROUND="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='CLIP' TEXT='CLIP' PUT=' CLIP="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='LEFT' TEXT='LEFT' PUT=' LEFT="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='TOP' TEXT='TOP' PUT=' TOP="%c"' TYPE='text'>
+<PARAM TAG='layer' NAME='VISIBILITY' TEXT='VISIBILITY' PUT=' VISIBILITY="%c"' TYPE='radio'>
+<PARAM TAG='layer' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+<PARAM TAG='layer' NAME='Z-INDEX' TEXT='Z-INDEX' PUT=' Z-INDEX="%c"' TYPE='text'>
+
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='layer' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='layer' PARAM='VISIBILITY' TEXT='hide' PUT='hide%c'>
+<VALUE TAG='layer' PARAM='VISIBILITY' TEXT='inherit' PUT='inherit%c'>
+
+# - Kbd
+<TAG NAME='kbd' TEXT='KBD' PUT='<KBD>%c</KBD>'>
+
+<PARAM TAG='kbd' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Kbd
+<TAG NAME='kbd' TEXT='KBD' PUT='<KBD>%c</KBD>'>
+
+<PARAM TAG='kbd' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='kbd' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Q
+<TAG NAME='q' TEXT='Q' PUT='<Q>%c</Q>'>
+
+<PARAM TAG='q' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='q' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='q' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='q' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='q' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='q' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Samp
+<TAG NAME='samp' TEXT='SAMP' PUT='<SAMP>%c</SAMP>'>
+
+<PARAM TAG='samp' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='samp' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='samp' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='samp' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='samp' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='samp' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Small
+<TAG NAME='small' TEXT='SMALL' PUT='<SMALL>%c</SMALL>'>
+
+<PARAM TAG='small' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='small' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='small' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='small' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='small' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='small' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Span
+<TAG NAME='span' TEXT='SPAN' PUT='<SPAN%c></SPAN>'>
+
+<PARAM TAG='span' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='DIR' TEXT='DIR' PUT=' DIR="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='DATAFLD' TEXT='DATAFLD' PUT=' DATAFLD="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='DATAFORMATAS' TEXT='DATAFORMATAS' PUT=' DATAFORMATAS="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='DATASRC' TEXT='DATASRC' PUT=' DATASRC="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='span' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Strike
+<TAG NAME='strike' TEXT='STRIKE' PUT='<STRIKE>%c</STRIKE>'>
+
+<PARAM TAG='strike' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='strike' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='strike' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='strike' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='strike' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='strike' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Strong
+<TAG NAME='strong' TEXT='STRONG' PUT='<STRONG>%c</STRONG>'>
+
+<PARAM TAG='strong' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='strong' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='strong' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='strong' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='strong' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='strong' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Sub
+<TAG NAME='sub' TEXT='SUB' PUT='<SUB>%c</SUB>'>
+
+<PARAM TAG='sub' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='sub' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='sub' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='sub' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='sub' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='sub' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Sup
+<TAG NAME='sup' TEXT='SUP' PUT='<SUP>%c</SUP>'>
+
+<PARAM TAG='sup' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='sup' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='sup' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='sup' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='sup' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='sup' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - S
+<TAG NAME='s' TEXT='S' PUT='<S>%c</S>'>
+
+<PARAM TAG='s' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='s' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='s' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='s' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='s' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='s' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Tt
+<TAG NAME='tt' TEXT='TT' PUT='<TT>%c</TT>'>
+
+<PARAM TAG='tt' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='tt' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='tt' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='tt' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='tt' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='tt' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - U
+<TAG NAME='u' TEXT='U' PUT='<U>%c</U>'>
+
+<PARAM TAG='u' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='u' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='u' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='u' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='u' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='u' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Var
+<TAG NAME='var' TEXT='VAR' PUT='<VAR%c></VAR>'>
+
+<PARAM TAG='var' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='var' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='var' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='var' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='var' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='var' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+
+# - Nobr
+<TAG NAME='nobr' TEXT='NOBR' PUT='<NOBR>%c'>
+
+# - Hr
+<TAG NAME='hr' TEXT='HR' PUT='<HR>%c'>
+
+<PARAM TAG='hr' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='hr' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='COLOR' TEXT='COLOR' PUT=' COLOR="%c"' TYPE='color'>
+<PARAM TAG='hr' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='NOSHADE' TEXT='NOSHADE' PUT=' NOSHADE="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='SIZE' TEXT='SIZE' PUT=' SIZE="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='hr' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='text'>
+
+<VALUE TAG='hr' PARAM='COLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='hr' PARAM='COLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='hr' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='hr' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='hr' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+# - Br
+<TAG NAME='br' TEXT='BR' PUT='<BR>%c'>
+
+<PARAM TAG='br' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='br' NAME='CLEAR' TEXT='CLEAR' PUT=' CLEAR="%c"' TYPE='radio'>
+<PARAM TAG='br' NAME='ID ' TEXT='ID ' PUT=' ID ="%c"' TYPE='text'>
+<PARAM TAG='br' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+
+<VALUE TAG='br' PARAM='CLEAR' TEXT='all' PUT='all%c'>
+<VALUE TAG='br' PARAM='CLEAR' TEXT='left' PUT='left%c'>
+<VALUE TAG='br' PARAM='CLEAR' TEXT='right' PUT='right%c'>
+
+# - Spacer
+<TAG NAME='spacer' TEXT='SPACER' PUT='<SPACER%c>'>
+
+<PARAM TAG='spacer' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='spacer' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int'>
+<PARAM TAG='spacer' NAME='SIZE' TEXT='SIZE' PUT=' SIZE="%c"' TYPE='int'>
+<PARAM TAG='spacer' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='radio'>
+<PARAM TAG='spacer' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='absbottom' PUT='absbottom%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='absmiddle' PUT='absmiddle%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='texttop' PUT='texttop%c'>
+<VALUE TAG='spacer' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+<VALUE TAG='spacer' PARAM='TYPE' TEXT='block' PUT='block%c'>
+<VALUE TAG='spacer' PARAM='TYPE' TEXT='horizontal' PUT='horizontal%c'>
+<VALUE TAG='spacer' PARAM='TYPE' TEXT='vertical' PUT='vertical%c'>
+
+# - WBR
+<TAG NAME='wbr' TEXT='WBR' PUT='<WBR>%c'>
+
+# - Area
+<TAG NAME='area' TEXT='AREA' PUT='<AREA%c>'>
+
+<PARAM TAG='area' NAME='ALT' TEXT='ALT' PUT=' ALT="%c"' TYPE='text'>
+<PARAM TAG='area' NAME='COORDS' TEXT='COORDS' PUT='COORDS="%c"' TYPE='text'>
+<PARAM TAG='area' NAME='HREF' TEXT='HREF' PUT=' HREF="%c"' TYPE='text'>
+<PARAM TAG='area' NAME='NOHREF' TEXT='NOHREF' PUT=' NOHREF="%c"' TYPE='text'>
+<PARAM TAG='area' NAME='SHAPE' TEXT='SHAPE' PUT=' SHAPE="%c"' TYPE='text'>
+<PARAM TAG='area' NAME='TARGET' TEXT='TARGET' PUT=' TARGET="%c"' TYPE='radio'>
+
+<VALUE TAG='area' PARAM='TARGET' TEXT='_blank' PUT='_blank%c'>
+<VALUE TAG='area' PARAM='TARGET' TEXT='_parent' PUT='_parent%c'>
+<VALUE TAG='area' PARAM='TARGET' TEXT='_self' PUT='_self%c'>
+<VALUE TAG='area' PARAM='TARGET' TEXT='_top' PUT='_top%c'>
+<VALUE TAG='area' PARAM='TARGET' TEXT='framename' PUT='framename%c'>
+
+# - Bdo
+<TAG NAME='bdo' TEXT='BDO' PUT='<BDO>%c'>
+
+# - Li
+<TAG NAME='li' TEXT='LI' PUT='<LI>%c</LI>'>
+
+# - Noscript
+<TAG NAME='noscript' TEXT='NOSCRIPT' PUT='<NOSCRIPT>%c</NOSCRIPT>'>
+
+# - Meta
+<TAG NAME='meta' TEXT='META' PUT='<META%c>'>
+
+<PARAM TAG='meta' NAME='CONTENT' TEXT='CONTENT' PUT=' CONTENT="%c"' TYPE='text'>
+<PARAM TAG='meta' NAME='HTTP-EQUIV' TEXT='HTTP-EQUIV' PUT=' HTTP-EQUIV="%c"' TYPE='radio'>
+<PARAM TAG='meta' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='radio'>
+
+<VALUE TAG='meta' PARAM='HTTP-EQUIV' TEXT='Content-Type' PUT='Content-Type%c'>
+<VALUE TAG='meta' PARAM='HTTP-EQUIV' TEXT='Content-Language' PUT='Content-Language%c'>
+<VALUE TAG='meta' PARAM='HTTP-EQUIV' TEXT='refresh' PUT='refresh%c'>
+
+<VALUE TAG='meta' PARAM='NAME' TEXT='author' PUT='author%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='copyright' PUT='copyright%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='description' PUT='description%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='distribution' PUT='distribution%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='doc-type' PUT='doc-type%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='keywords' PUT='keywords%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='rating' PUT='rating%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='reply-to' PUT='reply-to%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='revisit-after' PUT='revisit-after%c'>
+<VALUE TAG='meta' PARAM='NAME' TEXT='robots' PUT='robots%c'>
+
+# - Img
+<TAG NAME='img' TEXT='IMG' PUT='<IMG%c>'>
+
+<PARAM TAG='img' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='img' NAME='ALT' TEXT='ALT' PUT=' ALT="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='int'>
+<PARAM TAG='img' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='CONTROLS' TEXT='CONTROLS' PUT=' CONTROLS="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='DATAFLD' TEXT='DATAFLD' PUT=' DATAFLD="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='DATASRC' TEXT='DATASRC' PUT=' DATASRC="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='DYNSRC' TEXT='DYNSRC' PUT=' DYNSRC="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int'>
+<PARAM TAG='img' NAME='HSPACE' TEXT='HSPACE' PUT=' HSPACE="%c"' TYPE='int'>
+<PARAM TAG='img' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='ISMAP' TEXT='ISMAP' PUT=' ISMAP="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='LANG' TEXT='LANG' PUT=' LANG="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='LANGUAGE' TEXT='LANGUAGE' PUT=' LANGUAGE="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='LOOP' TEXT='LOOP' PUT=' LOOP="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='LOOPDELAY' TEXT='LOOPDELAY' PUT=' LOOPDELAY="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='LOWSRC' TEXT='LOWSRC' PUT=' LOWSRC="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='START' TEXT='START' PUT=' START="%c"' TYPE='radio'>
+<PARAM TAG='img' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='USEMAP' TEXT='USEMAP' PUT=' USEMAP="%c"' TYPE='text'>
+<PARAM TAG='img' NAME='VSPACE' TEXT='VSPACE' PUT=' VSPACE="%c"' TYPE='int'>
+<PARAM TAG='img' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+<VALUE TAG='img' PARAM='ALIGN' TEXT='absbottom' PUT='absbottom%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='absmiddle' PUT='absmiddle%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='texttop' PUT='texttop%c'>
+<VALUE TAG='img' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+<VALUE TAG='img' PARAM='START' TEXT='fileopen' PUT='fileopen%c'>
+<VALUE TAG='img' PARAM='START' TEXT='fileopen,mouseover' PUT='fileopen,mouseover%c'>
+<VALUE TAG='img' PARAM='START' TEXT='mouseover' PUT='mouseover%c'>
+
+# - Input
+<TAG NAME='input' TEXT='INPUT' PUT='<INPUT%c></INPUT>'>
+
+<PARAM TAG='input' NAME='ACCEPT' TEXT='ACCEPT' PUT=' ACCEPT="%c"' TYPE='radio'>
+<PARAM TAG='input' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='input' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='int'>
+<PARAM TAG='input' NAME='CHECKED' TEXT='CHECKED' PUT=' CHECKED="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int'>
+<PARAM TAG='input' NAME='HSPACE' TEXT='HSPACE' PUT=' HSPACE="%c"' TYPE='int'>
+<PARAM TAG='input' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='MAXLENGTH' TEXT='MAXLENGTH' PUT=' MAXLENGTH="%c"' TYPE='int'>
+<PARAM TAG='input' NAME='NAME' TEXT='NAME' PUT=' NAME="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='NOTAB' TEXT='NOTAB' PUT=' NOTAB="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='SIZE' TEXT='SIZE' PUT=' SIZE="%c"' TYPE='int'>
+<PARAM TAG='input' NAME='SRC' TEXT='SRC' PUT=' SRC="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='TABINDEX' TEXT='TABINDEX' PUT=' TABINDEX="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='TYPE' TEXT='TYPE' PUT=' TYPE="%c"' TYPE='radio'>
+<PARAM TAG='input' NAME='VALUE' TEXT='VALUE' PUT=' VALUE="%c"' TYPE='text'>
+<PARAM TAG='input' NAME='VSPACE' TEXT='VSPACE' PUT=' VSPACE="%c"' TYPE='int'>
+<PARAM TAG='input' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int'>
+
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='applications/msexcel' PUT='applications/msexcel%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='applications/msword' PUT='applications/msword%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='applications/pdf' PUT='applications/pdf%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='application/poscript' PUT='application/poscript%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='applications/rtf' PUT='applications/rtf%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='applications/x-zip-compressed' PUT='applications/x-zip-compressed%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='audio/basic' PUT='audio/basic%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='audio/x-aiff' PUT='audio/x-aiff%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='audio/mpeg' PUT='audio/mpeg%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='audio/pn/realaudio' PUT='audio/pn/realaudio%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='audio/x-wav' PUT='audio/x-wav%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/gif' PUT='image/gif%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/jpeg' PUT='image/jpeg%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/tiff' PUT='image/tiff%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-ms-bmp' PUT='image/x-ms-bmp%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-photo-cd' PUT='image/x-photo-cd%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-png' PUT='image/x-png%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-portablebitmap' PUT='image/x-portablebitmap%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-portable-greymap' PUT='image/x-portable-greymap%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-portable-pixmap' PUT='image/x-portable-pixmap%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='image/x-rgb' PUT='image/x-rgb%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='text/html' PUT='text/html%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='text/plain' PUT='text/plain%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='video/quicktime' PUT='video/quicktime%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='video/x-mpeg2' PUT='video/x-mpeg2%c'>
+<VALUE TAG='input' PARAM='ACCEPT' TEXT='video/x-msvideo' PUT='video/x-msvideo%c'>
+
+<VALUE TAG='input' PARAM='ALIGN' TEXT='absbottom' PUT='absbottom%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='absmiddle' PUT='absmiddle%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='middle' PUT='middle%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='texttop' PUT='texttop%c'>
+<VALUE TAG='input' PARAM='ALIGN' TEXT='top' PUT='top%c'>
+
+<VALUE TAG='input' PARAM='TYPE' TEXT='button' PUT='button%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='checkbox' PUT='checkbox%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='file' PUT='file%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='hidden' PUT='hidden%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='image' PUT='image%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='password' PUT='password%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='radio' PUT='radio%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='reset' PUT='reset%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='submit' PUT='submit%c'>
+<VALUE TAG='input' PARAM='TYPE' TEXT='text' PUT='text%c'>
+
+# - Table
+
+<TAG NAME='table' TEXT='TABLE' PUT='<TABLE%c>\n</TABLE>'>
+
+<PARAM TAG='table' NAME='ALIGN' TEXT='ALIGN' PUT=' ALIGN="%c"' TYPE='radio'>
+<PARAM TAG='table' NAME='BACKGROUND' TEXT='BACKGROUND' PUT=' BACKGROUND="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='BGCOLOR' TEXT='BGCOLOR' PUT=' BGCOLOR="%c"' TYPE='color'>
+<PARAM TAG='table' NAME='BORDER' TEXT='BORDER' PUT=' BORDER="%c"' TYPE='int'>
+<PARAM TAG='table' NAME='BORDERCOLOR' TEXT='BORDERCOLOR' PUT=' BORDERCOLOR="%c"' TYPE='color'>
+<PARAM TAG='table' NAME='BORDERCOLORDARK' TEXT='BORDERCOLORDARK' PUT=' BORDERCOLORDARK="%c"' TYPE='color'>
+<PARAM TAG='table' NAME='BORDERCOLORLIGHT' TEXT='BORDERCOLORLIGHT' PUT=' BORDERCOLORLIGHT="%c"' TYPE='color'>
+<PARAM TAG='table' NAME='CELLPADDING' TEXT='CELLPADDING' PUT=' CELLPADDING="%c"' TYPE='int'>
+<PARAM TAG='table' NAME='CELLSPACING' TEXT='CELLSPACING' PUT=' CELLSPACING="%c"' TYPE='int'>
+<PARAM TAG='table' NAME='CLASS' TEXT='CLASS' PUT=' CLASS="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='CLEAR' TEXT='CLEAR' PUT=' CLEAR="%c"' TYPE='radio'>
+<PARAM TAG='table' NAME='COLS' TEXT='COLS' PUT=' COLS="%c"' TYPE='int'>
+<PARAM TAG='table' NAME='FRAME' TEXT='FRAME' PUT=' FRAME="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='HEIGHT' TEXT='HEIGHT' PUT=' HEIGHT="%c"' TYPE='int%'>
+<PARAM TAG='table' NAME='ID' TEXT='ID' PUT=' ID="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='RULES' TEXT='RULES' PUT=' RULES="%c"' TYPE='radio'>
+<PARAM TAG='table' NAME='STYLE' TEXT='STYLE' PUT=' STYLE="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='SUMMARY' TEXT='SUMMARY' PUT=' SUMMARY="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='TITLE' TEXT='TITLE' PUT=' TITLE="%c"' TYPE='text'>
+<PARAM TAG='table' NAME='VALIGN' TEXT='VALIGN' PUT=' VALIGN="%c"' TYPE='radio'>
+<PARAM TAG='table' NAME='WIDTH' TEXT='WIDTH' PUT=' WIDTH="%c"' TYPE='int%'>
+
+<VALUE TAG='table' PARAM='ALIGN' TEXT='bleedleft' PUT='bleedleft%c'>
+<VALUE TAG='table' PARAM='ALIGN' TEXT='bleedright' PUT='bleedright%c'>
+<VALUE TAG='table' PARAM='ALIGN' TEXT='center' PUT='center%c'>
+<VALUE TAG='table' PARAM='ALIGN' TEXT='justify' PUT='justify%c'>
+<VALUE TAG='table' PARAM='ALIGN' TEXT='left' PUT='left%c'>
+<VALUE TAG='table' PARAM='ALIGN' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='table' PARAM='BGCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='black' PUT='black%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='green' PUT='green%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='red' PUT='red%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='white' PUT='white%c'>
+<VALUE TAG='table' PARAM='BORDERCOLOR' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='black' PUT='black%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='green' PUT='green%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='red' PUT='red%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='white' PUT='white%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORDARK' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='aqua' PUT='aqua%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='black' PUT='black%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='blue' PUT='blue%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='fuchsia' PUT='fuchsia%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='gray' PUT='gray%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='green' PUT='green%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='lime' PUT='lime%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='maroon' PUT='maroon%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='navy' PUT='navy%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='olive' PUT='olive%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='purple' PUT='purple%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='red' PUT='red%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='silver' PUT='silver%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='teal' PUT='teal%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='white' PUT='white%c'>
+<VALUE TAG='table' PARAM='BORDERCOLORLIGHT' TEXT='yellow' PUT='yellow%c'>
+
+<VALUE TAG='table' PARAM='CLEAR' TEXT='all' PUT='all%c'>
+<VALUE TAG='table' PARAM='CLEAR' TEXT='left' PUT='left%c'>
+<VALUE TAG='table' PARAM='CLEAR' TEXT='no' PUT='no%c'>
+<VALUE TAG='table' PARAM='CLEAR' TEXT='right' PUT='right%c'>
+
+<VALUE TAG='table' PARAM='RULES' TEXT='all' PUT='all%c'>
+<VALUE TAG='table' PARAM='RULES' TEXT='basic' PUT='basic%c'>
+<VALUE TAG='table' PARAM='RULES' TEXT='cols' PUT='cols%c'>
+<VALUE TAG='table' PARAM='RULES' TEXT='rows' PUT='rows%c'>
+
+<VALUE TAG='table' PARAM='VALIGN' TEXT='baseline' PUT='baseline%c'>
+<VALUE TAG='table' PARAM='VALIGN' TEXT='bottom' PUT='bottom%c'>
+<VALUE TAG='table' PARAM='VALIGN' TEXT='amiddlell' PUT='middle%c'>
+<VALUE TAG='table' PARAM='VALIGN' TEXT='top' PUT='top%c'>

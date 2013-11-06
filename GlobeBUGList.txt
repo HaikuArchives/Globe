@@ -1,0 +1,192 @@
+----------------------------------------------------------------------------------------------------------------------------
+
++ : javítva
+ - : nincs javítva
+/  : javítva? (teszteletlen)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Globe v0.3.0Final=>v0.4.0Final BUG lista
+
++ Memóriafelszabadítás javítása (nem tökéletes)
+- Hiányos a dokumentáció
+
+2003.05.21 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Globe v0.3.0Pre6=>v0.3.0Final BUG lista
+
++ Kikapcsolt BalView esetén mindig elveszik a focus
++ BImageItem, hibás path esetén megfagy
+- A ParamMenu scrollbarja rossz, amikor a menuvel kapcsolom vissza a balmenut
+es a keresesen all
+- Gyors asztalváltáskor visszaugrik (kis hiba)
++ Valami gáz van a tagmenüvel, nem jól sorszámozza, <i -nél (rhtmltags.rdat hibája)
++ A htmltags fájl hibás, hiányos
++ A ColorWin-ben a beépített színek hiányosak
+- Hiányos a dokumentáció
+
+2003.05.21 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Globe v0.3.0Pre5=>v0.3.0PRE6 BUG lista
+
++ Átméretezésnél ott marad a scrollbar
++ GetMouse() által okozott fagyások kiküszöbölése.
+- A ParamMenu scrollbarja rossz, amikor a menuvel kapcsolom vissza a balmenut
+es a keresesen all
+- Gyors asztalváltáskor visszaugrik (kis hiba)
+- Valami gáz van a tagmenüvel, nem jól sorszámozza, <f -nél ?? 	(Nem tudom előidézni)
++ Az ikonok háttérszínei nem átlátszóak (Támogatja a GIF-et is...)
++ Preferences és AboutWin háttérszínét nem oprendszertől kérti le
+- A htmltags fájl hibás, hiányos
+- A ColorWin-ben a beépített színek hiányosak
+- Hiányos a dokumentáció
+
+2003.05.08 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Globe v0.3.0Pre4=>v0.3.0PRE5 BUG lista
+
+- Átméretezésnél ott marad a scrollbar
++ UpdateParamMenu fagyást okozott param=" dd -nél nincs 2. "...
++ Tagmenü listája visszatörlésekor üres lett
++ ColorWin nem frissíti a html színezését
++ Timer elszálás < -re nem adja be a menut... (nem töröltem a timereket)
+- Valami gáz van a tagmenüvel, nem jól sorszámozza, <f -nél ?? 	(Nem tudom előidézni)
++ Új dokumentumkor az ablak nem lesz aktív
++ A panelek színeit nem az oprendszertől kérti le
+- Az ikonok háttérszínei nem átlátszóak
+- A htmltags fájl hibás, hiányos
+- A ColorWin-ben a beépített színek hiányosak
+- Hiányos a dokumentáció
++ Fájlváltáskor nem frissül a ParamMenu
++ A ToolBarok kikapcsolásánál nagy gondok vannak
++ Nem frissül rendesen a textview scrollbarja
++ A baloldali menu eltuntetese utan ott marad felül egy vonal (top +1 pixel)
++ Paramétermenü scrollbarja nem frissül rendesen
+
+2003.04.20 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Globe v0.3.0Pre3=>v0.3.0PRE4 BUG lista
+
++ magyar menüben bal oldalt az Ugrás helyett Úgrás van
++ Üres dokumentumba való kattintáskori fagyás javítása
++ A TAG-okat és paramétereket felismerő algoritmus hibáinak javítása (fagyás, hibás működés)
+
+2003.04.13 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Globe v0.3.0Pre2=>v0.3.0PRE3 BUG lista
+
++ Felső gombsorral történő módosítást is érzékeli (lehet menteni)
++ htmltags.rdat javítása
++ Az üres szövegen történő Replace All fagyásának javítása
+
+2003.03.25 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Globe v0.3.0Pre1=>v0.3.0PRE2 BUG lista
+
++ A kijelöléskori scrollozás javítása
++ Undo javítása
++ Hibás a kinézete az alsó taskbarnak
++ Zoom javiítása
++ Save As mindig engedélyezve van
++ ATagMenu hibájának javítása
+
+2002.12.02 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Globe v0.2.0=>v0.3.0 PRE1 BUG lista
+
++  RHTML_win.cpp calloc sizeof(RHTMLtext)=>RHTMLtext*...
++ "Megtekintés" gomb ezentúl rákérdez a mentésre
+
+2002.06.06 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Globe v0.2.0Pre8=>v0.2.0Final BUG lista
+
+-  RHTML_win.cpp calloc sizeof(RHTMLtext)=>RHTMLtext*...
+
+2002.06.06 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Globe v0.2.0Pre8=>v0.2.0Final BUG lista
+
++  Underline gomb hiánya
++ Preferencesben a "Default Fonts" felirat javítása "Default font" -ra
++ Ha az aktuális ablak gombjára kattintunk, akkor nem villog, nem váltja át önmagára
++ Mentetlen fájlt nem nyitja meg a böngészővel
++ Megtekintés elött elmenti a fájlt
++ A menubar által beszúrt szövegnél nem csinálta meg a scrollbar átméretezését
+-  Ha SPACE -t nyomok a paraméter " " -ei között, akkor a TAG -os ablak jön be
++ Escet beszúrja
++ ToolTip ablak az induló taskon jelenik meg
++ "Save all files" felirat javítása a szimpla menüben
++ Kiszedtem a nyelvi fájlokból a verziókat
++ Az Encoding alap beállítása UTF8 lett
+
+2002.05.08 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Globe v0.2.0Pre7=>v0.2.0Pre8 BUG lista
+
+-  Underline gomb hiánya
++ PHP kiemelés helyreállítása
++ MenuBar Anchor gombjának javítása
++ About ablak 2. megnyitásának javítása
++  Save & Close ablakban hiányos a forditás
++  Save & Quit ablakban hiányos a forditás
+
+2002.05.08 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Globe v0.2.0Pre6=>v0.2.0Pre7 BUG lista
+
++ ALT szövegekhez tartozó fordítások hiánya
++ Menüben a Help szó fordítása
++ Alapértelmezetten a Bal oldali rész kikapcsolva legyen
++ "Színezés" elnevezés cseréje (kiemelés)
++ QUIT az angol File menüpontban javítása Quit -re
++ Save As.. csak akkor megy, ha megváltozott a file tartalma (Nem tapasztaltam a hibát)
++ Alul a jobbgomb Close -nál mindig az aktuálisat zárja be, nam azt, amelyiket kértük
+-  Underline gomb hiánya
++ Memóriapazarlás (Tesztelésre szorul!!!)
++ Fájlváltásnál lassú, ha asortördelés és a sorszámozás is be van kapcsolva (Tesztelésre szorul!!!)
++ TAB -oknál is ugorjon beljebb, ha entert ütök
++ FileDialog ablaknál Lockolni a főablakot
++ "Run" (Alt) elnevezés cseréje "View" -ra a gombsoron
++ A "PHP" átnevezése "PHP (Dev.)" -re
+
+2002.05.04 - RoGer
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Ami hiányzik, de nem lesz benne a v0.2.0 -ban:
+
+- A Save,Save As ikon és menüpont szürkitése mentés után
+- Az ikonok kiemelése ha az egér felette áll
+- Megnyitás ablakba a karakterkódolást választásának lehetősége
+- Drag & Drop
+- Keresés
+----------------------------------------------------------------------------------------------------------------------------

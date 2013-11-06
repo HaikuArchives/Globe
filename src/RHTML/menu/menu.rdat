@@ -1,0 +1,11 @@
+ <BUTTON IMG='new_button.tga' NEW='' ALT='SimpleMenuBar_Alt:Create new file'>
+ <BUTTON IMG='open_button.tga' OPEN='' ALT='SimpleMenuBar_Alt:Open file'>
+ <BUTTON IMG='save_button.tga' IMG2='saved_button.tga' SAVE='' ALT='SimpleMenuBar_Alt:Save file' TYPE='SAVEBUTTON'>
+<BUTTON IMG='saveall_button.tga' IMG2='savedall_button.tga' SAVE_ALL='' ALT='SimpleMenuBar_Alt:Save all files' TYPE='SAVEALLBUTTON'>
+<BUTTON IMG='close_button.tga' IMG2='closed_button.tga' CLOSE='' ALT='SimpleMenuBar_Alt:Close file' TYPE='CLOSEBUTTON'>
+<BUTTON IMG='exit_button.tga' QUIT='' ALT='SimpleMenuBar_Alt:Quit'>
+ <BUTTON IMG='cut_button.tga' CUT='' ALT='SimpleMenuBar_Alt:Cut'>
+ <BUTTON IMG='copy_button.tga' COPY='' ALT='SimpleMenuBar_Alt:Copy'>
+ <BUTTON IMG='paste_button.tga' PASTE='' ALT='SimpleMenuBar_Alt:Paste'>
+ <BUTTON IMG='undo_button.tga' UNDO='' ALT='SimpleMenuBar_Alt:Undo'>
+<BUTTON IMG='netplus_button.tga' RUN='/boot/beos/apps/NetPositive' ALT='SimpleMenuBar_Alt:View'>
