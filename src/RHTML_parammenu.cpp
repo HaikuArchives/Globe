@@ -35,7 +35,6 @@
 #include <Clipboard.h>
 #include <StringView.h>
 #include <stdio.h>
-#include <ostream.h>
 #include <math.h>
 
 // ------------------------------------------------------------------------ RHTML_parammenu - RHTMLparammenu -
@@ -602,7 +601,7 @@ void RHTMLptextview::KeyDown(const char *bytes, int32 numBytes)
 void RHTMLptextview::Paste(BClipboard *clipboard)
 {
 	const char *text;
-	int32 textlen;
+	ssize_t textlen;
 	BMessage *clip = (BMessage *) NULL;
 
 	if (clipboard->Lock())
