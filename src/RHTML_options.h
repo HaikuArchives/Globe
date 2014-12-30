@@ -33,7 +33,7 @@
 #include <String.h>
 #include <View.h>
 #include <stdlib.h>
-#include <iostream.h>
+#include <iostream>
 
 class RHTMLOptions;
 

@@ -288,7 +288,6 @@ void RHTMLWin::AddText(const char *name,uint ft)
  if (textdb>0)
  {
   close->SetEnabled(true);
-  fmenu->FindToolItem("CLOSEBUTTON")->SetEnabled(true);
  }
 }
 // - End - RHTML_Win - AddText -------------------------------------------------------------------------------
@@ -310,7 +309,6 @@ void RHTMLWin::RemoveText(uint8 num)
 	if (textdb<=0)
 	{
 		close->SetEnabled(false);
-		fmenu->FindToolItem("CLOSEBUTTON")->SetEnabled(false);
 	}
 }
 // - End - RHTML_Win - RemoveText ----------------------------------------------------------------------------
@@ -1122,7 +1120,6 @@ void RHTMLWin::MessageReceived(BMessage *msg)
   break;
   case 'RTMM':
   {
-   fmenu->FindToolItem("SAVEBUTTON")->SetEnabled(textview[current]->Modify());
    save->SetEnabled(textview[current]->Modify());
 //   save_as->SetEnabled(textview[current]->Modify());
    bool mod=false;
@@ -1130,7 +1127,6 @@ void RHTMLWin::MessageReceived(BMessage *msg)
     if (textview[i]->Modify())
      mod=true;
    save_all->SetEnabled(mod);
-   fmenu->FindToolItem("SAVEALLBUTTON")->SetEnabled(mod);
   }
   break;
   case 'ABWQ':

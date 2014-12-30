@@ -22,15 +22,15 @@
 #include <Alert.h>
 #include <Application.h>
 #include <Bitmap.h>
-#include <fs_attr.h>
+#include <Clipboard.h>
 #include <MenuItem.h>
 #include <NodeInfo.h>
 #include <Path.h>
 #include <Roster.h>
 
-#include <unistd.h>
-
+#include <fs_attr.h>
 #include <printf.h>
+#include <unistd.h>
 
 
 

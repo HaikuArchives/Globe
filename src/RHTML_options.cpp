@@ -34,6 +34,8 @@
 #include <Directory.h>
 #include <fstream>
 
+using std::ifstream;
+
 RHTMLOptions *fOptions;
 
 // ---------------------------------------------------------------------------- RHTML_Options - RHTMLOptions -
@@ -554,7 +556,7 @@ void RHTMLOptions::Load()
      tmp.CopyInto(val1,tmp.FindFirst('=')+1,tmp.Length()-tmp.FindFirst('=')-1);
      val1=rgetstring(val1);
      font_style fstyle;
-     get_font_style((font_family) val1.String(), 0, &fstyle);
+     get_font_style((char *) val1.String(), 0, &fstyle);
      DefaultFont->SetFamilyAndStyle(val1.String(),fstyle);
     } else
     if (name.ICompare("Default_Font_Style")==0)	// - Default_Font_Style
