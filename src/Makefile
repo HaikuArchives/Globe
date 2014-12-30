@@ -94,7 +94,7 @@ SYSTEM_INCLUDE_PATHS =
 #	Additional paths paths to look for local headers. These use the form
 #	#include "header". Directories that contain the files in SRCS are
 #	automatically included.
-LOCAL_INCLUDE_PATHS = Timer Tool ToolTip URLView
+LOCAL_INCLUDE_PATHS = 
 
 #	Specify the level of optimization that you want. Specify either NONE (O0),
 #	SOME (O1), FULL (O2), or leave blank (for the default optimization level).
@@ -127,7 +127,7 @@ SYMBOLS :=
 DEBUGGER := 
 
 #	Specify any additional compiler flags to be used.
-COMPILER_FLAGS = -Woverloaded-virtual -funsigned-bitfields -D_HAIKU_
+COMPILER_FLAGS = 
 
 #	Specify any additional linker flags to be used.
 LINKER_FLAGS = 
