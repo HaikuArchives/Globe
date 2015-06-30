@@ -28,7 +28,6 @@
 // - Includes
 #include "RTimer.h"
 #include <Autolock.h>
-#include <ostream>
 
 #define SLEEP_TIME 1000
 // ---------------------------------------------------------------------------------------- R_Timer - RTimer -
@@ -71,7 +70,7 @@ int32 RTimer::ThreadFunc(void* data)
 		}
 		::snooze(SLEEP_TIME);
 	}
-	return 0;	
+	return 0;
 }
 
 // ------------------------------------------------------------------------------------ R_Timer - ResetTimer -

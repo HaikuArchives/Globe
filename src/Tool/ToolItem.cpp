@@ -32,7 +32,6 @@
 #include <Window.h>
 #include <stdio.h>
 #include <iostream>
-#include <ostream>
 
 #include "ToolItem.h"
 
@@ -177,7 +176,7 @@ void BToolItem::MouseUp(BPoint where)
      Parent()->MessageReceived(new BMessage(B_MOUSE_DOWN_MSG));
    }
   }
- } 
+ }
 }
 
 // -------------------------------------------------------------------------------- B_Tool_Item - MouseMoved -
@@ -286,7 +285,7 @@ void BImageItem::SetImage(const char *filename)
    }
    fBitmap->SetBits(bits, fBitmap->BitsLength(), 0, B_RGBA32);
   }
- 
+
   Update();
  } else
  {
@@ -335,7 +334,7 @@ void BImageItem::Update()
  }
  ResizeTo(width+3,height+3);
  if (Parent())
-  Parent()->MessageReceived(new BMessage(B_UPDATE_SIZE_MSG)); 
+  Parent()->MessageReceived(new BMessage(B_UPDATE_SIZE_MSG));
 }
 
 // ------------------------------------------------------------------------------------- B_Image_Item - Draw -
@@ -348,12 +347,12 @@ void BImageItem::Draw(BRect updateRect)
  float fontleft,bmpleft,fonttop=0;
  font_height height;
  GetFontHeight(&height);
- 
+
  if (fBitmap)
   fonttop=fBitmap->Bounds().bottom+height.ascent+height.descent+height.leading+1;
  else
   fonttop=height.ascent+height.descent+height.leading+1;
- 
+
  if (HAlign==B_ALIGN_CENTER)
  {
   if (fBitmap)
@@ -388,13 +387,13 @@ void BImageItem::Draw(BRect updateRect)
     SetDrawingMode(B_OP_ALPHA);
     DrawBitmapAsync(fBitmap,BPoint(bmpleft,2));
     SetDrawingMode(drawmode);
-    
+
     SetHighColor(ui_color(B_PANEL_BACKGROUND_COLOR));
     StrokeLine(BPoint(bmpleft-1,1),BPoint(fBitmap->Bounds().right+bmpleft,1));
     StrokeLine(BPoint(bmpleft-1,1),BPoint(bmpleft-1,fBitmap->Bounds().bottom+2));
    }
    if (Enablecaption)
-   {  
+   {
     SetHighColor(ui_color(B_PANEL_BACKGROUND_COLOR));
     DrawString(fCaption->String(),BPoint(fontleft,fonttop));
     SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR), B_DARKEN_MAX_TINT));
@@ -415,7 +414,7 @@ void BImageItem::Draw(BRect updateRect)
     StrokeLine(BPoint(bmpleft-1,fBitmap->Bounds().bottom+2),BPoint(fBitmap->Bounds().right+bmpleft,fBitmap->Bounds().bottom+2));
    }
    if (Enablecaption)
-   {  
+   {
     SetHighColor(ui_color(B_PANEL_BACKGROUND_COLOR));
     DrawString(fCaption->String(),BPoint(fontleft-1,fonttop-1));
     SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR), B_DARKEN_MAX_TINT));
@@ -437,7 +436,7 @@ void BImageItem::Draw(BRect updateRect)
    StrokeLine(BPoint(bmpleft-1,fBitmap->Bounds().bottom+2),BPoint(fBitmap->Bounds().right+bmpleft,fBitmap->Bounds().bottom+2));
   }
   if (Enablecaption)
-  {  
+  {
    SetHighColor(ui_color(B_PANEL_BACKGROUND_COLOR));
    DrawString(fCaption->String(),BPoint(fontleft-1,fonttop-1));
    SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR), B_DARKEN_MAX_TINT));
@@ -504,7 +503,7 @@ void BRadioItem::SetImage(const char *filename)
    }
    fBitmap->SetBits(bits, fBitmap->BitsLength(), 0, B_RGBA32);
   }
- 
+
   Update();
  } else
  {
@@ -553,7 +552,7 @@ void BRadioItem::Update()
   width--;
  ResizeTo(width+3,height+3);
  if (Parent())
-  Parent()->MessageReceived(new BMessage(B_UPDATE_SIZE_MSG)); 
+  Parent()->MessageReceived(new BMessage(B_UPDATE_SIZE_MSG));
 }
 
 // ------------------------------------------------------------------------------- B_Radio_Item - SetChecked -
@@ -591,9 +590,9 @@ void BRadioItem::Draw(BRect updateRect)
  {
   SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR),B_LIGHTEN_2_TINT));
   StrokeLine(BPoint(0,0),BPoint(Bounds().right,0));//
-  if (!Firstitem) 
+  if (!Firstitem)
    StrokeLine(BPoint(0,0),BPoint(0,Bounds().bottom-2));
-  
+
   SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR),B_DARKEN_1_TINT));
   StrokeLine(BPoint(Bounds().right,1),BPoint(Bounds().right,Bounds().bottom-1));
   SetHighColor(ui_color(B_PANEL_BACKGROUND_COLOR));
@@ -603,14 +602,14 @@ void BRadioItem::Draw(BRect updateRect)
  {
   SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR),B_LIGHTEN_2_TINT));
   StrokeLine(BPoint(0,0),BPoint(Bounds().right,0));//
-  if (!Firstitem) 
+  if (!Firstitem)
    StrokeLine(BPoint(0,0),BPoint(0,Bounds().bottom-2));
   StrokeLine(BPoint(0,Bounds().bottom),BPoint(Bounds().right,Bounds().bottom));
-  
+
   SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR),B_DARKEN_1_TINT));
   StrokeLine(BPoint(0,Bounds().bottom-1),BPoint(Bounds().right,Bounds().bottom-1));
   StrokeLine(BPoint(Bounds().right,1),BPoint(Bounds().right,Bounds().bottom-1));
- 
+
  }
 }
 

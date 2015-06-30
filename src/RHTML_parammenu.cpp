@@ -35,7 +35,6 @@
 #include <Clipboard.h>
 #include <StringView.h>
 #include <stdio.h>
-#include <ostream>
 #include <math.h>
 
 // ------------------------------------------------------------------------ RHTML_parammenu - RHTMLparammenu -
@@ -47,9 +46,9 @@ RHTMLparammenu::RHTMLparammenu(BRect fRect,RHTMLWin *fwin): BView(fRect,"Search"
  fParamList->fScrollView = new BScrollView("SpecCharsScrollView", fParamList, B_FOLLOW_ALL, B_WILL_DRAW, false, true, B_PLAIN_BORDER);//B_FANCY_BORDER
  AddChild(fParamList->fScrollView);
  fParamList->TargetedByScrollView(fParamList->fScrollView);
- 
+
  fParamList->SetFontSize(12);
- 
+
  fParamList->SetViewColor(ui_color(B_PANEL_BACKGROUND_COLOR));
  fParamList->SetLowColor(ui_color(B_PANEL_BACKGROUND_COLOR));
 
@@ -99,7 +98,7 @@ RHTMLplistview::RHTMLplistview(BRect rect, BWindow *win): BListView(rect,"List",
  int i=0;
  if( (f = fopen(dir.String(),"rt")) == NULL); else
  {
-  while (feof(f)==false) 
+  while (feof(f)==false)
   {
    line = "";
    fscanf(f,"%c",&c);
@@ -119,7 +118,7 @@ RHTMLplistview::RHTMLplistview(BRect rect, BWindow *win): BListView(rect,"List",
    y=line.FindFirst(' ',x);
    if ((x>=0) && (y>=0) && (y>=x))
     line.CopyInto(rtag,x+1,y-x-1);
-  
+
    i=line.FindFirst('<')+1;
    while (i<=line.FindFirst('>',i)-1)
    {
@@ -127,7 +126,7 @@ RHTMLplistview::RHTMLplistview(BRect rect, BWindow *win): BListView(rect,"List",
     y=line.FindFirst('=',x);
     if ((x>=0) && (y>=0) && ((y-x)>=0))
     line.CopyInto(str3,x,y-x);
- 
+
     x=line.FindFirst('\'',i)+1;
     y=line.FindFirst('\'',x);
     if ((x>=0) && (y>=0) && ((y-x)>=0))
@@ -148,12 +147,12 @@ RHTMLplistview::RHTMLplistview(BRect rect, BWindow *win): BListView(rect,"List",
      cmd.push_back(tmp);
     }
    }
-   
+
    name.ToLower();
    type.ToLower();
    param.ToLower();
    tag.ToLower();
-   
+
    if (rtag == "TAG")
    {
     Tag tmp;
@@ -269,7 +268,7 @@ void RHTMLplistview::SetTagParams(BString tag, std::vector<Params> params)
    AddItem(fItems[fItems.size() - 1]);
    fItems[fItems.size() - 1]->AttachedToView();
   }
- 
+
   tag.ToUpper();
   fTagLabel->SetText(tag.String());
  }
@@ -312,7 +311,7 @@ RHTMLplistitem::RHTMLplistitem(BString name, BString value, ParamType type, BStr
  fValue = value;
  fType = type;
  fListView = listview;
- 
+
  if (fType == R_TEXT_PARAM || fType == R_INT_PARAM || fType == R_INT_SZ_PARAM)
  {
   fTextView = new RHTMLptextview(value,type,fListView,this);
@@ -324,7 +323,7 @@ RHTMLplistitem::RHTMLplistitem(BString name, BString value, ParamType type, BStr
   fColorWin = new RHTMLcolorwin();
   fColorWin->Show();
   fListView->fWindow->Activate();
-   
+
  } else
  if (fType == R_RADIO_PARAM)
  {
@@ -417,7 +416,7 @@ void RHTMLplistitem::DrawItem(BView *owner, BRect bounds, bool complete)
 
   owner->SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR),B_DARKEN_2_TINT));
   owner->FillRect(BRect(bounds.left + kozep + 1,bounds.top,bounds.left + kozep + 1,bounds.bottom));
- 
+
   owner->SetHighColor(tint_color(ui_color(B_PANEL_BACKGROUND_COLOR),B_DARKEN_2_TINT));
   owner->FillRect(BRect(bounds.left,bounds.bottom,bounds.right,bounds.bottom));
   owner->SetHighColor(color);
@@ -439,12 +438,12 @@ void RHTMLplistitem::DrawItem(BView *owner, BRect bounds, bool complete)
    owner->FillRect(BRect(bounds.left + kozep + 7 + owner->StringWidth(fValue.String())+1,bounds.top,bounds.right,bounds.bottom-1));
   owner->FillRect(BRect(bounds.left + kozep + 2,bounds.top,bounds.right,bounds.top));
   owner->FillRect(BRect(bounds.left + kozep + 2,bounds.bottom-1,bounds.right,bounds.bottom-1));
-  
+
   owner->MovePenTo(bounds.left + kozep + 8, bounds.bottom-3);
   owner->SetHighColor(color);
   owner->DrawString(fValue.String());
  }
- 
+
  if (fType == R_RADIO_PARAM)
  {
   owner->SetHighColor(ui_color(B_PANEL_BACKGROUND_COLOR));
@@ -455,7 +454,7 @@ void RHTMLplistitem::DrawItem(BView *owner, BRect bounds, bool complete)
    owner->FillRect(BRect(bounds.left + kozep + 1,bounds.top,bounds.left + kozep + 6,bounds.bottom-1));
   else
    owner->FillRect(BRect(bounds.left + kozep + 2,bounds.top,bounds.left + kozep + 6,bounds.bottom-1));
-  
+
   owner->MovePenTo(bounds.left + kozep + 8, bounds.bottom-3);
   owner->SetHighColor(color);
   owner->DrawString(fValue.String());
