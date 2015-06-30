@@ -386,7 +386,7 @@ void RHTMLPreferencesWin::FTCreateKitList(uint FileType)
 // - End - RHTML_Preferences_Win - FTCreateKitList -----------------------------------------------------------
 
 // ----------------------------------------------------------------------- RHTML_Preferences_Win - FTSetFont -
-void RHTMLPreferencesWin::FTSetFont(const char *font,const char *style ="")
+void RHTMLPreferencesWin::FTSetFont(const char *font,const char *style)
 {
  fFTFontsBox->RemoveChild(fFTDFStyle);
 
@@ -649,7 +649,7 @@ void RHTMLPreferencesWin::MessageReceived(BMessage *msg)
     msg->FindString("font_family",&family);
     FTSetFont(family);
     font_style fStyle;
-    get_font_style((font_family) family, 0, &fStyle);
+    get_font_style((char *) family, 0, &fStyle);
     fOptions->DefaultFont->SetFamilyAndStyle(family,fStyle);
     fOptions->Save();
    }

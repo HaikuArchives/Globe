@@ -30,9 +30,13 @@
 
 #include <unistd.h>
 
+#ifndef _HAIKU_
 #include <printf.h>
+#endif
 
-
+#ifdef _HAIKU_
+#include<Clipboard.h>
+#endif
 
 URLView::URLView( BRect frame, const char *name, const char *label,
 				  const char *url, uint32 resizingMode, uint32 flags )

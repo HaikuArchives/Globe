@@ -28,7 +28,7 @@
 // - Includes
 #include "RTimer.h"
 #include <Autolock.h>
-#include <ostream.h>
+#include <ostream>
 
 #define SLEEP_TIME 1000
 // ---------------------------------------------------------------------------------------- R_Timer - RTimer -

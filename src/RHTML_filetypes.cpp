@@ -39,7 +39,7 @@ RHTMLFileTypes::RHTMLFileTypes(uint ft,BTextView *textview)
 // - End - RHTML_File_Types - RHTMLFileTypes -----------------------------------------------------------------
 
 // ---------------------------------------------------------------------- RHTML_File_Types - SetFontAndColor -
-void RHTMLFileTypes::SetFontAndColor(BString *oldtext,BString *currenttext,int mode=0,int offset1=-1,int offset2=-1)
+void RHTMLFileTypes::SetFontAndColor(BString *oldtext,BString *currenttext,int mode,int offset1,int offset2)
 {
  if (fOptions->FileTypes[FileType]->Name->ICompare("HTML")==0)
  {

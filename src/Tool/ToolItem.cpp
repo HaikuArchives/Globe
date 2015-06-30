@@ -31,9 +31,12 @@
 #include <TranslationUtils.h>
 #include <Window.h>
 #include <stdio.h>
-#include <ostream.h>
+#include <iostream>
+#include <ostream>
 
 #include "ToolItem.h"
+
+using namespace std;
 
 const uint32 B_UPDATE_SIZE_MSG = 'BUSM';
 const uint32 B_MOUSE_DOWN_MSG = 'BMDM';

@@ -288,7 +288,9 @@ void RHTMLWin::AddText(const char *name,uint ft)
  if (textdb>0)
  {
   close->SetEnabled(true);
+  #ifndef _HAIKU_
   fmenu->FindToolItem("CLOSEBUTTON")->SetEnabled(true);
+  #endif
  }
 }
 // - End - RHTML_Win - AddText -------------------------------------------------------------------------------
@@ -310,7 +312,9 @@ void RHTMLWin::RemoveText(uint8 num)
 	if (textdb<=0)
 	{
 		close->SetEnabled(false);
+		#ifndef _HAIKU_
 		fmenu->FindToolItem("CLOSEBUTTON")->SetEnabled(false);
+		#endif
 	}
 }
 // - End - RHTML_Win - RemoveText ----------------------------------------------------------------------------
@@ -1122,7 +1126,9 @@ void RHTMLWin::MessageReceived(BMessage *msg)
   break;
   case 'RTMM':
   {
+  	#ifndef _HAIKU_
    fmenu->FindToolItem("SAVEBUTTON")->SetEnabled(textview[current]->Modify());
+    #endif
    save->SetEnabled(textview[current]->Modify());
 //   save_as->SetEnabled(textview[current]->Modify());
    bool mod=false;
@@ -1130,7 +1136,9 @@ void RHTMLWin::MessageReceived(BMessage *msg)
     if (textview[i]->Modify())
      mod=true;
    save_all->SetEnabled(mod);
+   #ifndef _HAIKU_
    fmenu->FindToolItem("SAVEALLBUTTON")->SetEnabled(mod);
+   #endif
   }
   break;
   case 'ABWQ':
