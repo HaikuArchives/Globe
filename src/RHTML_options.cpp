@@ -961,7 +961,7 @@ uint RHTMLOptions::LoadLocale(const char *language)
   char ch=0;
   i=0;
 //  while ((ch!='\n')&&(!feof(f)))
-  while ( ch != '\n' && !file.eof())
+  while ( ch != '\n' && !file.eof() )
   {
 //   fscanf(f,"%c",&ch);
    file.get(ch);

@@ -289,7 +289,7 @@ void BImageItem::SetImage(const char *filename)
   Update();
  } else
  {
-  cout << "hiba" << endl;
+  cout << "Could not open: " << filename << endl;
  }
 }
 
@@ -507,7 +507,7 @@ void BRadioItem::SetImage(const char *filename)
   Update();
  } else
  {
-  cout << "hiba" << endl;
+  cout << "Could not open: " << filename << endl;
  }
 }
 
