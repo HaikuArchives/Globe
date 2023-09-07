@@ -155,6 +155,7 @@ RHTMLTagMenu::RHTMLTagMenu(BTextView *textview): BWindow(BRect(-110,-210,-10,-10
 // -----------------------------------------------------------------------------------------------------------
 RHTMLTagMenu::~RHTMLTagMenu()
 {
+	fColorWin->Lock();
 	fColorWin->Quit();
 }
 
