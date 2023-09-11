@@ -46,7 +46,7 @@ RHTMLAboutWin::RHTMLAboutWin(BRect fRect,BWindow *parent): BWindow(fRect,fOption
  AddChild(fView);
  image = new BBitmap(BRect(0,0,99,199),  B_RGB32 );
  image->SetBits(AboutPicture, 60000, 0,  B_RGB32);
- fViewj->SetViewBitmap(image,BRect(0,0,99,199),BRect(0,0,99,199),B_FOLLOW_TOP,B_FOLLOW_TOP);
+ //fViewj->SetViewBitmap(image,BRect(0,0,99,199),BRect(0,0,99,199),B_FOLLOW_TOP,B_FOLLOW_TOP);
 
  fView->SetViewColor(ui_color(B_PANEL_BACKGROUND_COLOR));
  BFont *fFont1= new BFont(be_plain_font);

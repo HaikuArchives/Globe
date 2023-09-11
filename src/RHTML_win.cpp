@@ -1349,7 +1349,7 @@ void RHTMLWin::MessageReceived(BMessage *msg)
   break;
   case 'Refe':
   {
-   BString dir = "/boot/beos/system/Tracker ";
+   BString dir = "/boot/system/Tracker ";
    dir << fOptions->SettingsDir << "reference/index.html";
    system(dir.String());
   }
