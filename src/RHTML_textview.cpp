@@ -72,6 +72,7 @@ RHTMLtext::~RHTMLtext()
 // -----------------------------------------------------------------------------------------------------------
 RHTMLtextview::~RHTMLtextview()
 {
+	fTagMenu->Lock();
 	fTagMenu->Quit();
 	delete fFileTypes;
 }
