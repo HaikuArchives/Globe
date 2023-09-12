@@ -4,7 +4,7 @@ resource app_signature "application/x-vnd.Globe";
 
 resource app_version {
 	major  = 0,
-	middle = 3,
+	middle = 4,
 	minor  = 0,
 
 	variety = B_APPV_DEVELOPMENT,

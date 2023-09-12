@@ -15,54 +15,52 @@ NAME = Globe
 TYPE = APP
 
 # 	If you plan to use localization, specify the application's MIME signature.
-APP_MIME_SIG =
+APP_MIME_SIG = application/x-vnd.Globe
 
 #	The following lines tell Pe and Eddie where the SRCS, RDEFS, and RSRCS are
 #	so that Pe and Eddie can fill them in for you.
 #%{
-# @src->@
+	SRCS = \
+	 RHTML_amenu.cpp  \
+	 RHTML_app.cpp  \
+	 RHTML_bmenu.cpp  \
+	 RHTML_buttonmenu.cpp  \
+	 RHTML_colorwin.cpp  \
+	 RHTML_filetypes.cpp  \
+	 RHTML_fmenu.cpp  \
+	 RHTML_numview.cpp  \
+	 RHTML_options.cpp  \
+	 RHTML_parammenu.cpp  \
+	 RHTML_prefwin.cpp  \
+	 RHTML_savewin.cpp  \
+	 RHTML_tabbutton.cpp  \
+	 RHTML_tagmenu.cpp  \
+	 RHTML_textview.cpp  \
+	 RHTML_win.cpp  \
+	 Timer/RTimer.cpp  \
+	 Tool/RadioBar.cpp  \
+	 Tool/ToolBar.cpp  \
+	 Tool/ToolItem.cpp  \
+	 Tool/ToolView.cpp  \
+	 ToolTip/TToolTip.cpp  \
+	 URLView/URLView.cpp  \
 
-#	Specify the source files to use. Full paths or paths relative to the
-#	Makefile can be included. All files, regardless of directory, will have
-#	their object files created in the common object directory. Note that this
-#	means this Makefile will not work correctly if two source files with the
-#	same name (source.c or source.cpp) are included from different directories.
-#	Also note that spaces in folder names do not work well with this Makefile.
-SRCS= RHTML_app.cpp \
-		RHTML_win.cpp \
-		RHTML_numview.cpp \
-		RHTML_savewin.cpp \
-		RHTML_aboutwin.cpp \
-		RHTML_prefwin.cpp \
-		RHTML_fmenu.cpp \
-		RHTML_buttonmenu.cpp \
-		RHTML_bmenu.cpp \
-		RHTML_parammenu.cpp \
-		RHTML_colorwin.cpp \
-		RHTML_amenu.cpp \
-		RHTML_textview.cpp \
-		RHTML_tabbutton.cpp \
-		RHTML_tagmenu.cpp \
-		RHTML_filetypes.cpp \
-		RHTML_options.cpp \
-		ToolTip/TToolTip.cpp \
-		Tool/RadioBar.cpp \
-		Tool/ToolBar.cpp \
-		Tool/ToolItem.cpp \
-		Tool/ToolView.cpp \
-		Timer/RTimer.cpp \
-		URLView/URLView.cpp
 
 #	Specify the resource definition files to use. Full or relative paths can be
 #	used.
-RDEFS = Globe.rdef
+RDEFS = \
+	 Globe.rdef  \
+
 
 #	Specify the resource files to use. Full or relative paths can be used.
 #	Both RDEFS and RSRCS can be utilized in the same Makefile.
-RSRCS =
+RSRCS = \
+
 
 # End Pe/Eddie support.
 # @<-src@
+#%}
+
 #%}
 
 #	Specify libraries to link against.
@@ -77,7 +75,7 @@ RSRCS =
 #	- 	if your library does not follow the standard library naming scheme,
 #		you need to specify the path to the library and it's name.
 #		(e.g. for mylib.a, specify "mylib.a" or "path/mylib.a")
-LIBS= be game textencoding tracker translation $(STDCPPLIBS)
+LIBS= be game textencoding tracker localestub translation $(STDCPPLIBS)
 
 #	Specify additional paths to directories following the standard libXXX.so
 #	or libXXX.a naming scheme. You can specify full paths or paths relative
@@ -89,7 +87,7 @@ LIBPATHS =
 #	Additional paths to look for system headers. These use the form
 #	"#include <header>". Directories that contain the files in SRCS are
 #	NOT auto-included here.
-SYSTEM_INCLUDE_PATHS =
+SYSTEM_INCLUDE_PATHS = /boot/system/develop/headers/private/interface/
 
 #	Additional paths paths to look for local headers. These use the form
 #	#include "header". Directories that contain the files in SRCS are
