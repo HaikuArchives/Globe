@@ -418,7 +418,7 @@ void RHTMLbmenu::MouseMoved(BPoint where, uint32 code, const BMessage *a_message
   }
  }
 
- char cursordata[] = {
+ unsigned char cursordata[] = {
 		0x10,0x01,0x07,0x07,
 		0x02,0x80,
 		0x02,0x80,
