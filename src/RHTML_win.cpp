@@ -27,6 +27,7 @@
 
 // - Includes
 #include <Application.h>
+#include <AboutWindow.h>
 #include <MenuBar.h>
 #include <Menu.h>
 #include <stdlib.h>
@@ -40,7 +41,11 @@
 #include <Alert.h>
 #include <Font.h>
 #include <Beep.h>
+#include <Locale.h>
 #include "RHTML_win.h"
+
+static const char* kSignature = "application/x-vnd.Globe";
+
 
 // - End - RHTML_Win - RHTMLWin ------------------------------------------------------------------------------
 RHTMLWin::RHTMLWin(BRect fRect, int argc, char **argv): BWindow(fRect, "RHTML", B_TITLED_WINDOW, B_UNTYPED_WINDOW)
@@ -48,7 +53,6 @@ RHTMLWin::RHTMLWin(BRect fRect, int argc, char **argv): BWindow(fRect, "RHTML", 
 	Options = new RHTMLOptions();
 	fSaveWinShow = false;
 	fPrefWinShow = false;
-	fAboutWinShow = false;
 	savequit = false;
 	saveclose = false;
 	saverun = false;
@@ -193,8 +197,8 @@ RHTMLWin::RHTMLWin(BRect fRect, int argc, char **argv): BWindow(fRect, "RHTML", 
 
    fMenuBar->AddItem(fMenu);
   fMenu = new BMenu(fOptions->GetLocaleString("Globe_Window_Menu","Help"));
-   fMenu->AddItem(item=new BMenuItem(fOptions->GetLocaleString("Globe_Window_Menu_Help","Reference"),new BMessage('Refe')));
-   fMenu->AddItem(item=new BMenuItem(fOptions->GetLocaleString("Globe_Window_Menu_Help","About"),new BMessage('Abo')));
+   fMenu->AddItem(item=new BMenuItem(fOptions->GetLocaleString("Globe_Window_Menu_Help","Reference..."),new BMessage('Refe')));
+   fMenu->AddItem(item=new BMenuItem(fOptions->GetLocaleString("Globe_Window_Menu_Help","About..."),new BMessage(B_ABOUT_REQUESTED)));
   fMenuBar->AddItem(fMenu);
   AddChild(fMenuBar);	
 
@@ -389,7 +393,6 @@ bool RHTMLWin::QuitRequested()
  } else
  {
   if (fPrefWinShow) fPrefWin->SetQuit(true);
-  if (fAboutWinShow) fAboutWin->SetQuit(true);
   be_app->PostMessage(B_QUIT_REQUESTED);
   return BWindow::QuitRequested();
  }
@@ -1143,7 +1146,7 @@ void RHTMLWin::MessageReceived(BMessage *msg)
   break;
   case 'ABWQ':
   {
-   fAboutWinShow=false;
+	
   }
   break;
   case 'SERC':
@@ -1349,7 +1352,7 @@ void RHTMLWin::MessageReceived(BMessage *msg)
   break;
   case 'Refe':
   {
-   BString dir = "/boot/beos/system/Tracker ";
+   BString dir = "/boot/system/Tracker ";
    dir << fOptions->SettingsDir << "reference/index.html";
    system(dir.String());
   }
@@ -1364,15 +1367,29 @@ void RHTMLWin::MessageReceived(BMessage *msg)
    fUpdateTimer->EndTimer();
   }
   break;
-  case 'Abo':
+  case B_ABOUT_REQUESTED:
   {
-   if (!fAboutWinShow)
-   {
-    fAboutWinShow=true;
-    fAboutWin= new RHTMLAboutWin(BRect(250,300,549,499),this);
-    fAboutWin->Show();
-   }
+   BAboutWindow* window = new BAboutWindow("Globe",	kSignature);
+
+	const char* specialThanks[] = {
+		"Graphics: Attila Ökrös (kesigomu)",
+		"TTooltip y Robert Polic",
+		"URLView by William Kakes",
+		NULL
+	};
+
+	const char* authors[] = {
+		"Gergely Rózsahegyi",
+		"Florian Thaler",
+		NULL
+	};
+
+	window->AddCopyright(2007, "Gergely Rózsahegyi", NULL);
+	window->AddAuthors(authors);
+	window->AddSpecialThanks(specialThanks);
+	window->Show();
   }
+  
   break;
   default:
    {

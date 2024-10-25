@@ -41,7 +41,6 @@
 #include "RHTML_prefwin.h"
 #include "RHTML_options.h"
 #include "RHTML_savewin.h"
-#include "RHTML_aboutwin.h"
 #include "RTimer.h"
 #include "ToolView.h"
 #include "ToolBar.h"
@@ -96,7 +95,6 @@ class RHTMLWin : public BWindow
 				uint8			current;
 				bool			fSaveWinShow;
 				bool			fPrefWinShow;
-				bool			fAboutWinShow;
 				bool			savequit;
 				bool			saveclose;
 				bool			saverun;
@@ -126,7 +124,6 @@ class RHTMLWin : public BWindow
 				BMenuItem		*fCRLF_LF;
 				BMenuItem		*fLF_CRLF;
 				BMenuItem		*fWordWrap;
-				RHTMLAboutWin	*fAboutWin;
 				RTimer			*fUpdateTimer;
 				
 				int				saveall;
